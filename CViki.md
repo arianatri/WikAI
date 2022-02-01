@@ -520,8 +520,7 @@ Papers:
 
 ##### Pretrained models
 
-* [<img src="https://oss.openmmlab.com/www/community/openmmlab.png" width=32/>Open MMLab (MMOCR)](https://mmdetection.readthedocs.io/en/v2.20.0/model_zoo.html)
-https://mmocr.readthedocs.io/en/latest/modelzoo.html#text-detection-models)
+* [<img src="https://oss.openmmlab.com/www/community/openmmlab.png" width=32/>Open MMLab (MMOCR)](https://mmocr.readthedocs.io/en/latest/modelzoo.html#text-detection-models)
 
 #### Text recognition
 
@@ -530,6 +529,8 @@ https://mmocr.readthedocs.io/en/latest/modelzoo.html#text-detection-models)
 | Paper | Published | * Acc |
 |-------|-----------|--------|
 | [Read Like Humans: Autonomous, Bidirectional and Iterative Language Modeling for Scene Text Recognition](https://arxiv.org/abs/2103.06495) | Mar-2021 | 96.2 |
+
+* Acc: Accuracy on IIIT dataset
 
 ##### Pretrained models
 
@@ -715,6 +716,9 @@ https://mmocr.readthedocs.io/en/latest/modelzoo.html#text-detection-models)
     *  [Image Segmentation](#busts_in_silhouette-image-segmentation)
 
 ### Pascal VOC
+
+> Provides standardised image data sets for object class recognition 
+
 * :house: **Main page**: http://host.robots.ox.ac.uk/pascal/VOC/
 * **Images**:
     * **Total**: 11.5k
@@ -750,7 +754,15 @@ https://mmocr.readthedocs.io/en/latest/modelzoo.html#text-detection-models)
 	* **Test**: 500
 * **Tasks**:
 	* [Text Detection](#Text-Detection)
-	* 
+
+### IIIT:
+
+> A dataset harvested from Google image search from Query words like billboards, signboard, house numbers, house name plates, movie posters
+
+* 🏠 **Main page**: http://cvit.iiit.ac.in/research/projects/cvit-projects/the-iiit-5k-word-dataset
+* **Images**: 5k
+* **Tasks**:
+* 	* [Text recognition](#Text-recognition)
     
 ## Material
 
