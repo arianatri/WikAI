@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: docker://pandoc/core:2.9
+      - uses: docker://pandoc/latex:2.9
         with:
           args: -s -o output/ComputerVision.pdf CViki.md
       - uses: actions/upload-artifact@master
