@@ -1,0 +1,19 @@
+name: Create PDF
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: docker://pandoc/core:2.9
+        with:
+          args: -s -o output/ComputerVision.pdf CViki.md
+      - uses: actions/upload-artifact@master
+        with:
+          name: output
+          path: output
