@@ -54,27 +54,27 @@
 
 | Framework                                                    | Image | Video | C/C++ | Python |
 | ------------------------------------------------------------ | ----- | ----- | ----- | ------ |
-| [<img src="https://opencv.org/wp-content/uploads/2020/07/cropped-Fav-32x32.png" width=32/>OpenCV](https://opencv.org/) | ✅     | ✅     | ✅     | ✅      |
-| [<img src="https://pillow.readthedocs.io/en/stable/_static/favicon.ico" width=32 />Pillow](https://pillow.readthedocs.io/en/stable/) | ✅     |       | ✅     |        |
-| [<img src="https://scikit-image.org/_static/favicon.ico" width=32/>Scikit-image](https://scikit-image.org/) | ✅     |       | ✅     |        |
+| [<img src="https://opencv.org/wp-content/uploads/2020/07/cropped-Fav-32x32.png" width=32/>OpenCV](https://opencv.org/) | :heavy_check_mark:     | :heavy_check_mark:     | :heavy_check_mark:     | :heavy_check_mark:      |
+| [<img src="https://pillow.readthedocs.io/en/stable/_static/favicon.ico" width=32 />Pillow](https://pillow.readthedocs.io/en/stable/) | :heavy_check_mark:     |       | :heavy_check_mark:     |        |
+| [<img src="https://scikit-image.org/_static/favicon.ico" width=32/>Scikit-image](https://scikit-image.org/) | :heavy_check_mark:     |       | :heavy_check_mark:     |        |
 
 ### Image Augmentation
 
 | Library                                                      | Basic Transforms | Keypoints | Bounding Boxes | Segmentation |
 | ------------------------------------------------------------ | ---------------- | --------- | -------------- | ------------ |
-| [Torchvision](https://pytorch.org/vision/stable/transforms.html) | ✅                |           |                |              |
-| [imgaug](https://imgaug.readthedocs.io/en/latest/index.html) | ✅                | ✅         | ✅              | ✅            |
-| [albumentations](https://albumentations.ai/docs/)            | ✅                | ✅         | ✅              | ✅            |
+| [Torchvision](https://pytorch.org/vision/stable/transforms.html) | :heavy_check_mark:                |           |                |              |
+| [imgaug](https://imgaug.readthedocs.io/en/latest/index.html) | :heavy_check_mark:                | :heavy_check_mark:         | :heavy_check_mark:              | :heavy_check_mark:            |
+| [albumentations](https://albumentations.ai/docs/)            | :heavy_check_mark:                | :heavy_check_mark:         | :heavy_check_mark:              | :heavy_check_mark:            |
 
 ### Low-level Deep Learning Frameworks
 
 | Framework                                                    | Creator       | Python | C/C++ | R    | Java | Javascript |
 | ------------------------------------------------------------ | ------------- | ------ | ----- | ---- | ---- | ---------- |
-| [<img src="https://pytorch.org/favicon.ico" width="32" />PyTorch](#-Pytorch) | Facebook      | ✅      | ✅     |      |      |            |
-| [<img src="https://www.tensorflow.org/favicon.ico" width="32" />Tensorflow](#-TensorFlow) | Google        | ✅      | ✅     |      | ✅    | ✅          |
-| [<img src="https://caffe.berkeleyvision.org/images/caffeine-icon.png" width="32"/>Caffe](#-Caffe) | UC Berkeley   | ✅      | ✅     |      |      |            |
-| [<img src="https://pjreddie.com/static/icon.png" width="32"/>Darknet](#-Darknet) | Joseph Redmon |        | ✅     |      |      |            |
-| [<img src="https://raw.githubusercontent.com/dmlc/web-data/master/mxnet/image/mxnet-icon.png" width="32"/>MXNet](#-MXNet) | Apache        | ✅      | ✅     | ✅    | ✅    |            |
+| [<img src="https://pytorch.org/favicon.ico" width="32" />PyTorch](#-Pytorch) | Facebook      | :heavy_check_mark:      | :heavy_check_mark:     |      |      |            |
+| [<img src="https://www.tensorflow.org/favicon.ico" width="32" />Tensorflow](#-TensorFlow) | Google        | :heavy_check_mark:      | :heavy_check_mark:     |      | :heavy_check_mark:    | :heavy_check_mark:          |
+| [<img src="https://caffe.berkeleyvision.org/images/caffeine-icon.png" width="32"/>Caffe](#-Caffe) | UC Berkeley   | :heavy_check_mark:      | :heavy_check_mark:     |      |      |            |
+| [<img src="https://pjreddie.com/static/icon.png" width="32"/>Darknet](#-Darknet) | Joseph Redmon |        | :heavy_check_mark:     |      |      |            |
+| [<img src="https://raw.githubusercontent.com/dmlc/web-data/master/mxnet/image/mxnet-icon.png" width="32"/>MXNet](#-MXNet) | Apache        | :heavy_check_mark:      | :heavy_check_mark:     | :heavy_check_mark:    | :heavy_check_mark:    |            |
 
 
 #### <img src="https://pytorch.org/favicon.ico" width="32" /> Pytorch
@@ -143,13 +143,13 @@
 
 | Framework                                                    | Creator   | <img src="https://pytorch.org/favicon.ico" width="32" /> | <img src="https://www.tensorflow.org/favicon.ico" width="32" /> | <img src="https://caffe.berkeleyvision.org/images/caffeine-icon.png" width="32"/> | <img src="https://raw.githubusercontent.com/dmlc/web-data/master/mxnet/image/mxnet-icon.png" width="32"/> |
 | ------------------------------------------------------------ | --------- | -------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [<img src="https://pytorch.org/favicon.ico" width="32" />Torchvision](#-Torchvision) | Facebook   | ✅                                                        |                                                              |                                                              |                                                              |
-| [<img src="https://assets.website-files.com/5f76c986da6f6011315a6c45/5f7b485594e5335f56984a3c_Lightning_FavIcon.png" width="32">PyTorch Lightning](#-PyTorch-Lightning) | CILVR     | ✅                                                        |                                                              |                                                              |                                                              |
-| [<img src="https://keras.io/favicon.ico" width="32">Keras](#-Keras) | Google    |                                                          | ✅                                                            |                                                              |                                                              |
-| [<img src="https://cv.gluon.ai/_static/assets/img/gluon_white.png" width="32"/>GluonCV](#-GluonCV) | DMLC      | ✅                                                        |                                                              |                                                              | ✅                                                            |
+| [<img src="https://pytorch.org/favicon.ico" width="32" />Torchvision](#-Torchvision) | Facebook   | :heavy_check_mark:                                                        |                                                              |                                                              |                                                              |
+| [<img src="https://assets.website-files.com/5f76c986da6f6011315a6c45/5f7b485594e5335f56984a3c_Lightning_FavIcon.png" width="32">PyTorch Lightning](#-PyTorch-Lightning) | CILVR     | :heavy_check_mark:                                                        |                                                              |                                                              |                                                              |
+| [<img src="https://keras.io/favicon.ico" width="32">Keras](#-Keras) | Google    |                                                          | :heavy_check_mark:                                                            |                                                              |                                                              |
+| [<img src="https://cv.gluon.ai/_static/assets/img/gluon_white.png" width="32"/>GluonCV](#-GluonCV) | DMLC      | :heavy_check_mark:                                                        |                                                              |                                                              | :heavy_check_mark:                                                            |
 | [<img src="https://mediapipe.dev/assets/img/favicon.svg" width="32">MediaPipe](#-MediaPipe) | Google    |                                                          |                                                              |                                                              |                                                              |
-| [<img src="https://production-media.paperswithcode.com/libraries/dete.png" width="32">Detectron2](#-Detectron2) | Facebook  | ✅                                                        |                                                              |                                                              |                                                              |
-| [<img src="https://oss.openmmlab.com/www/community/openmmlab.png" width=32/>MMCV](#-MMCV) | OpenMMLab | ✅                                                        |                                                              |                                                              |                                                              |
+| [<img src="https://production-media.paperswithcode.com/libraries/dete.png" width="32">Detectron2](#-Detectron2) | Facebook  | :heavy_check_mark:                                                        |                                                              |                                                              |                                                              |
+| [<img src="https://oss.openmmlab.com/www/community/openmmlab.png" width=32/>MMCV](#-MMCV) | OpenMMLab | :heavy_check_mark:                                                        |                                                              |                                                              |                                                              |
 
 #### <img src="https://pytorch.org/favicon.ico" width="32" /> Torchvision
 
