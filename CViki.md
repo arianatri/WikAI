@@ -26,6 +26,7 @@
   * [Image Segmentation](#busts_in_silhouette-image-segmentation)
   * [Landmark/Keypoint Extraction](#pushpin-landmarkkeypoint-extraction)
   * [Metric Learning / Few-Shot Learning](#triangular_ruler-metric-learning--few-shot-learning)
+  * [OCR](#bookmark_tabs-OCR)
   * [Image synthesis](#Image-synthesis)
 - [Datasets](#Datasets)
   * [Digit Recognition](#Digit-Recognition)
@@ -502,6 +503,49 @@ Papers:
 
 * [<img src="https://oss.openmmlab.com/www/community/openmmlab.png" width=32/>Open MMLab (MMFewShot)](https://mmfewshot.readthedocs.io/en/latest/model_zoo.html)
 
+### :bookmark_tabs: OCR
+
+#### Text Detection
+
+##### Models
+
+| Paper | Published | * R | * P | * F |
+|-------|-----------|--------|-----------|----------|
+| [Multi-Oriented Text Detection with Fully Convolutional Networks](https://arxiv.org/abs/1604.04018v2) | Apr-2016 | 88 | 78 | 73 |
+| [Single Shot Text Detector with Regional Attention](https://arxiv.org/abs/1709.00138v1) | Sep-2017 | 86 | 88 | 87 |
+| [Efficient and Accurate Arbitrary-Shaped Text Detection with Pixel Aggregation Network](https://arxiv.org/abs/1908.05900v2) | Aug-2019 | 81 | 84 | 82 |
+| [TextFuseNet: Scene Text Detection with Richer Fused Features](https://www.ijcai.org/proceedings/2020/72) | Jul-2020 | 89 | 91 | 90 |
+
+* R, P, F: Recall, Precision and F1-Score on ICDAR-2015
+
+##### Pretrained models
+
+* [<img src="https://oss.openmmlab.com/www/community/openmmlab.png" width=32/>Open MMLab (MMOCR)](https://mmdetection.readthedocs.io/en/v2.20.0/model_zoo.html)
+https://mmocr.readthedocs.io/en/latest/modelzoo.html#text-detection-models)
+
+#### Text recognition
+
+##### Models
+
+| Paper | Published | * Acc |
+|-------|-----------|--------|
+| [Read Like Humans: Autonomous, Bidirectional and Iterative Language Modeling for Scene Text Recognition](https://arxiv.org/abs/2103.06495) | Mar-2021 | 96.2 |
+
+##### Pretrained models
+
+* [<img src="https://oss.openmmlab.com/www/community/openmmlab.png" width=32/>Open MMLab (MMOCR)](https://mmocr.readthedocs.io/en/latest/modelzoo.html#text-recognition-models)
+
+#### Solutions
+
+- Standalone:
+	1. Tesseract: https://github.com/tesseract-ocr/tesseract
+	2. PyTesseract: https://github.com/madmaze/pytesseract
+
+- Cloud:
+	1. Google Cloud: https://cloud.google.com/vision/docs/ocr
+	2. Microsoft Azure: https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/quickstarts-sdk/client-library?tabs=visual-studio&pivots=programming-language-python
+	3. ABBYY: https://www.abbyy.com/cloud-ocr-sdk/legal/
+
 ## Datasets
 
 ### MNIST
@@ -697,6 +741,16 @@ Papers:
 	* [Metric Learning / Few-Shot Learning](#triangular_ruler-metric-learning--few-shot-learning)
 	* [Object detection](#mag-object-detection)
 	* [Image classification](#camera-image-classification)
+
+### ICDAR-2015:
+
+* :house: **Main page**: https://iapr.org/archives/icdar2015/index.html%3Fp=254.html
+* **Images**:
+	* **Train**: 1k
+	* **Test**: 500
+* **Tasks**:
+	* [Text Detection](#Text-Detection)
+	* 
     
 ## Material
 
