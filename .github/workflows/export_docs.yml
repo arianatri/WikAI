@@ -1,4 +1,4 @@
-name: Create PDF
+name: Create HTML
 
 on:
   # Allows you to run this workflow manually from the Actions tab
@@ -10,10 +10,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: docker://pandoc/latex:2.9
+      - name: Create folder
+        run: mkdir -p html
+      - uses: docker://pandoc/core:2.9
         with:
-          args: -s -o output/ComputerVision.pdf CViki.md
+          args: -s --metadata title="Computer Vision" -o html/ComputerVision.html  CViki.md
       - uses: actions/upload-artifact@master
         with:
-          name: output
-          path: output
+          name: html
+          path: html
