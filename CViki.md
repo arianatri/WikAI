@@ -27,7 +27,8 @@
   * [Landmark/Keypoint Extraction](#pushpin-landmarkkeypoint-extraction)
   * [Metric Learning / Few-Shot Learning](#triangular_ruler-metric-learning--few-shot-learning)
   * [OCR](#bookmark_tabs-OCR)
-  * [Image synthesis](#Image-synthesis)
+  * [Image synthesis](#art-Image-synthesis)
+  * [Image Editting](#paintbrush-Image-Editing)
 - [Datasets](#Datasets)
   * [Digit Recognition](#Digit-Recognition)
   * [CIFAR-10](#CIFAR-10)
@@ -549,6 +550,105 @@ Papers:
 	1. Google Cloud: https://cloud.google.com/vision/docs/ocr
 	2. Microsoft Azure: https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/quickstarts-sdk/client-library?tabs=visual-studio&pivots=programming-language-python
 	3. ABBYY: https://www.abbyy.com/cloud-ocr-sdk/legal/
+
+### :art: Image Synthesis
+
+> Image synthesis is the process of artificially generating images that contain some particular desired content
+
+#### Unconditional
+
+<img src="https://miro.medium.com/max/1280/1*9p3vCVmRHY5QoPQM98Kx0A.gif" width="50%" />
+
+##### Models
+
+| Model | Paper | Published |
+|-------|-------|-----------|
+| GAN | [Generative Adversarial Networks](https://arxiv.org/abs/1406.2661) | Jun-2014 |
+| DCGAN | [Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks](https://arxiv.org/abs/1511.06434) | Nov-2015 |
+| VAE-GAN | [Autoencoding beyond pixels using a learned similarity metric](https://arxiv.org/abs/1512.09300) | Dec-2015 |
+| InfoGAN | [InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets](https://arxiv.org/abs/1606.03657v1) | Jan-2016 |
+| BiGAN | [Adversarial Feature Learning](https://arxiv.org/abs/1605.09782v7) | May-2016 |
+| LSGAN | [Least Squares Generative Adversarial Networks](https://arxiv.org/abs/1611.04076) | Nov-2016 |
+| WGAN | [Wasserstein GAN](https://arxiv.org/abs/1701.07875v3) | Jan-2017 |
+| GGAN | [Geometric GAN](https://arxiv.org/abs/1705.02894) | May-2017 |
+| ProGAN | [Progressive Growing of GANs for Improved Quality, Stability, and Variation](https://arxiv.org/abs/1710.10196) | Oct-2017 |
+| StyleGAN | [A Style-Based Generator Architecture for Generative Adversarial Networks](https://arxiv.org/abs/1812.04948) | Dec-2018 |
+| LOGAN | [LOGAN: Latent Optimisation for Generative Adversarial Networks](https://arxiv.org/abs/1912.00953) | Dec-2019 |
+| StyleGAN2 | [Analyzing and Improving the Image Quality of StyleGAN](https://arxiv.org/abs/1912.04958) | Dec-2019 |
+| Improved-DDPM | [Improved Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2102.09672) | Feb-2021 |
+| StyleGAN3 | [Alias-Free Generative Adversarial Networks](https://arxiv.org/abs/2106.12423) | Jun-2021 |
+| SwinStyle | [StyleSwin: Transformer-based GAN for High-resolution Image Generation](https://arxiv.org/abs/2112.10762) | Dec-2021 |
+
+#### Class-Conditioned
+
+<img src="https://learnopencv.com/wp-content/uploads/2021/07/Conditional-GAN-in-PyTorch-and-TensorFlow.jpeg" width="50%" />
+
+##### Models
+
+| Model | Paper | Published |
+|-------|-------|-----------|
+| CGAN | [Conditional Generative Adversarial Nets](https://arxiv.org/abs/1411.1784) | Nov-2014 |
+| SNGAN | [Spectral Normalization for Generative Adversarial Networks](https://arxiv.org/abs/1802.05957) | Feb-2018 |
+| SAGAN | [Self-Attention Generative Adversarial Networks](https://arxiv.org/abs/1805.08318) | May-2018 |
+| BigGAN | [Large Scale Adversarial Representation Learning](https://arxiv.org/abs/1907.02544v2) | Jul-2019 |
+
+#### Image to Image translation
+
+<img src="https://raw.githubusercontent.com/gradpratik/CycleGAN-Tensorflow-2/master/pics/horse2zebra.gif" width="50%" />
+
+##### Models
+
+| Model | Paper | Published |
+|-------|-------|-----------|
+| CoGAN | [Coupled Generative Adversarial Networks](https://arxiv.org/abs/1606.07536) | Jun-2016 |
+| Pix2Pix | [Image-to-Image Translation with Conditional Adversarial Networks](https://arxiv.org/abs/1611.07004) | Nov-2016 |
+| CycleGAN | [Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks](https://arxiv.org/abs/1703.10593) | Mar-2017 |
+| CC-FPSE-AUG | [Improving Augmentation and Evaluation Schemes for Semantic Image Synthesis](https://arxiv.org/abs/2011.12636) | Nov-2020 |
+| DAFormer | [DAFormer: Improving Network Architectures and Training Strategies for Domain-Adaptive Semantic Segmentation](https://arxiv.org/abs/2111.14887) | Nov-2021 |
+
+#### Pretrained Models
+
+* [<img src="https://oss.openmmlab.com/www/community/openmmlab.png" width=32/>Open MMLab (MMGeneration)](https://mmgeneration.readthedocs.io/en/latest/modelzoo_statistics.html)
+* <img src="https://www.tensorflow.org/favicon.ico" width="32" /> Tensorflow:
+	* [StyleGAN](https://github.com/NVlabs/stylegan#using-pre-trained-networks)
+	* [StyleGAN2](https://github.com/NVlabs/stylegan2#using-pre-trained-networks)
+
+### :paintbrush: Image Editing
+
+#### Super-Resolution
+
+<img src="https://miro.medium.com/max/1400/0*cUNPPG12JvHIJCcg.gif" width="50%" />
+
+##### Models
+
+| Model | Paper | Published |
+|-------|-------|-----------|
+| SR-CNN | [Image Super-Resolution Using Deep Convolutional Networks](https://arxiv.org/abs/1501.00092) | Dec-2014 |
+| SRGan | [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network](https://arxiv.org/abs/1609.04802) | Sep-2016 |
+| EDSR | [Enhanced Deep Residual Networks for Single Image Super-Resolution](https://arxiv.org/abs/1707.02921) | Jul-2017 |
+| ESRGAN | [ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks](https://arxiv.org/abs/1809.00219) | Sep-2018 |
+| HAN | [Single Image Super-Resolution via a Holistic Attention Network](https://arxiv.org/abs/2008.08767v1) | Aug-2020 |
+| GLEAN | [GLEAN: Generative Latent Bank for Large-Factor Image Super-Resolution](https://arxiv.org/abs/2012.00739) | Dec-2020 |
+| SwinIR | [SwinIR: Image Restoration Using Swin Transformer](https://arxiv.org/abs/2108.10257v1) | Aug-2021 |
+| BRGM | [Bayesian Image Reconstruction using Deep Generative Models](https://arxiv.org/abs/2012.04567v5) | Dec-2020 |
+
+#### Inpainting
+
+<img src="https://thumbs.gfycat.com/BetterAstonishingBird-max-1mb.gif" width="50%" />
+
+##### Models
+
+| Model | Paper | Published |
+|-------|-------|-----------|
+| BRGM | [Bayesian Image Reconstruction using Deep Generative Models](https://arxiv.org/abs/2012.04567v5) | Dec-2021 |
+| DeepFillV1 | [Generative Image Inpainting with Contextual Attention](https://arxiv.org/abs/1801.07892) | Jan-2018 |
+| DeepFillV2 | [https://arxiv.org/abs/1806.03589](https://arxiv.org/abs/1806.03589) | Jun-2018 |
+| SRNet | [Editing Text in the Wild](https://arxiv.org/abs/1908.03047v1) | Aug-2019 |
+| GIP | [Image Completion and Extrapolation with Contextual Cycle Consistency](https://arxiv.org/abs/2006.02620) | Jun-2020 | 
+
+### Pretrained Models
+
+* [<img src="https://oss.openmmlab.com/www/community/openmmlab.png" width=32/>Open MMLab (MMEditing)](https://mmediting.readthedocs.io/en/latest/modelzoo.html)
 
 ## Datasets
 
