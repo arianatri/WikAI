@@ -49,7 +49,6 @@
   * [Papers](#Papers)
   * [Blogs](#Blogs)
 
-
 ## Frameworks
 
 ### Image processing libraries
@@ -896,12 +895,16 @@ Papers:
 
 * [Deep Learning book](https://www.deeplearningbook.org/)
 * [Computer Vision:  Models, Learning, and Inference](http://www.computervisionmodels.com/)
+* [Computer Vision with Python](https://www.oreilly.com/library/view/programming-computer-vision/9781449341916/)
 
 ### :page_facing_up: Papers
 
 * [Arxiv](https://arxiv.org/)
 * [PapersWithCode](https://paperswithcode.com/)
+* [Research Gate](https://www.researchgate.net/)
 
 ### :orange_book: Blogs
 
 * [Medium](https://medium.com/machine-learning-world/tagged/computer-vision)
+* [Towards Datascience](https://towardsdatascience.com/tagged/computer-vision)
+* [Analytics Vidhya](https://www.analyticsvidhya.com/blog/tag/computer-vision/)
