@@ -43,6 +43,7 @@
   * [CUB-200-2011](#CUB-200-2011)
   * [ICDAR-2015](#ICDAR-2015)
   * [IIIT](#IIIT)
+  * [FFHQ](#FFHQ)
 - [Material](#Material)
   * [Books](#Books)
   * [Papers](#Papers)
@@ -772,7 +773,8 @@ Papers:
     * Train: 200k
     * Test: ??
 * **Tasks**:
-    * FaceParts segmentation: [Instance segmentation](#Instance-segmentation)
+    * FaceParts segmentation: [Instance segmentation](#Image-segmentation)
+    * Image segmentation: [Image editing](#paintbrush-Image-Editing)
 * **Classes**: (17)
     * **Instance classes**: skin, nose, left_eye, right_eye, left_eyebrow, right_eyebrow, left_ear, right_ear, mouth, lip, hair, hat, eyeglass, earring, necklace, neck, cloth.
     
@@ -877,7 +879,16 @@ Papers:
 * 🏠 **Main page**: http://cvit.iiit.ac.in/research/projects/cvit-projects/the-iiit-5k-word-dataset
 * **Images**: 5k
 * **Tasks**:
-* 	* [Text recognition](#Text-recognition)
+	* [Text recognition](#Text-recognition)
+
+### FFHQ
+
+> Flickr-Faces-HQ (FFHQ) is a high-quality image dataset of human faces, originally created as a benchmark for generative adversarial networks (GAN):
+
+* :house: **Main page** : https://github.com/NVlabs/ffhq-dataset
+* **Images**: 70k at 1024x1024
+* **Tasks**:
+	* [Image synthesis](#art-Image-synthesis)
     
 ## Material
 
