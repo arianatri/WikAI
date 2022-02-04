@@ -592,7 +592,7 @@ Papers:
 | SAGAN | [Self-Attention Generative Adversarial Networks](https://arxiv.org/abs/1805.08318) | May-2018 |
 | BigGAN | [Large Scale Adversarial Representation Learning](https://arxiv.org/abs/1907.02544v2) | Jul-2019 |
 
-#### Image to Image translation
+#### Image to Image Translation
 
 <img src="https://raw.githubusercontent.com/gradpratik/CycleGAN-Tensorflow-2/master/pics/horse2zebra.gif" width="50%" />
 
@@ -605,6 +605,18 @@ Papers:
 | CycleGAN | [Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks](https://arxiv.org/abs/1703.10593) | Mar-2017 |
 | CC-FPSE-AUG | [Improving Augmentation and Evaluation Schemes for Semantic Image Synthesis](https://arxiv.org/abs/2011.12636) | Nov-2020 |
 | DAFormer | [DAFormer: Improving Network Architectures and Training Strategies for Domain-Adaptive Semantic Segmentation](https://arxiv.org/abs/2111.14887) | Nov-2021 |
+
+#### Neural Style-Transfer
+
+##### Models
+
+| Paper | Published |
+|-------|-----------|
+| [A Neural Algorithm of Artistic Style](https://arxiv.org/abs/1508.06576) | Aug-2015 |
+| [Instance Normalization: The Missing Ingredient for Fast Stylization](https://arxiv.org/abs/1607.08022v3) | Jul-2016 |
+| [Precomputed Real-Time Texture Synthesis with Markovian Generative Adversarial Networks](https://arxiv.org/abs/1604.04382) | Apr-2016 |
+| [Universal Style Transfer via Feature Transforms](https://arxiv.org/abs/1705.08086) | May-2017 |
+| [A Closed-form Solution to Photorealistic Image Stylization](https://arxiv.org/abs/1802.06474v5) | Feb-2018 |
 
 #### Pretrained Models
 
