@@ -485,26 +485,27 @@ Papers:
 
     <img src="https://latex.codecogs.com/svg.latex?PDJ%20%3D%20%5Cfrac%7B%5Csum%5E%7BN%7D_%7Bi%3D1%7D%20%5Cmathbb%7B1%7D_%7Bd%28p_i%2Cg_i%29%20%3C%20t%20%5Ccdot%20d%7D%7D%7BN%7D" />
 
-    where
-    * **_N_**: Number of object keypoints
-    * **_p_i_**: Coordinates of predicted keypoint
-    * **_g_i_**: Coordinates of ground truth keypoint
-    * **_t_**: Threshold
-    * **_d_**: Object diagonal size
-    
+where
+
+	- **_N_**: Number of object keypoints
+	- **_p_i_**: Coordinates of predicted keypoint
+	- **_g_i_**: Coordinates of ground truth keypoint
+	- **_t_**: Threshold
+	- **_d_**: Object diagonal size
+
 * **OKS**:
 
     <img src="https://latex.codecogs.com/svg.latex?OKS%20%3D%20%5Cfrac%7B%5Csum_%7Bi%3D1%7D%5EN%20%5Cmathbb%7B1%7D_%7Bv_i%3E0%7D%20%5Ccdot%20%5Cexp%5Cbig%28-%5Cfrac%7Bd%28p_i%2C%20g_i%29%7D%7B2%20s%5E2%20k_i%5E2%7D%5Cbig%29%20%7D%7B%5Csum_%7Bi%3D1%7D%5EN%20%5Cmathbb%7B1%7D_%7Bv_i%3E0%7D%7D" />
 
-    where
-    * **_N_**: Number of object keypoints
-    * **_p_i_**: Coordinates of predicted keypoint
-    * **_g_i_**: Coordinates of ground truth keypoint
-    * **_v_i_**: Keypoint ground truth visibility
-    * **_s_**: Square root of object area
-    * **_k_i_**: Keypoint importance constant
+where
 
-* **AP@k**: Average precision at **_k_** OKS threshold 
+	- **_N_**: Number of object keypoints
+	- **_p_i_**: Coordinates of predicted keypoint
+	- **_g_i_**: Coordinates of ground truth keypoint
+	- **_v_i_**: Keypoint ground truth visibility
+	- **_s_**: Square root of object area
+	- **_k_i_**: Keypoint importance constant
+	- **AP@k**: Average precision at **_k_** OKS threshold 
 
 #### Benchmark
 
@@ -556,11 +557,12 @@ Papers:
 * **_Accuracy_**/<img src="https://latex.codecogs.com/svg.latex?\inline&space;Recall_%7B%401%7D" />: Fraction of times where the class predicted from the closest sample matches the actual class. I.e:
 
     <img src="https://latex.codecogs.com/svg.latex?%5Cfrac%7B%5Csum_%7Bi%3D1%7D%5E%7BN%7D%20%5Cmathbb%7B1%7D_%7BC%5E%2A%5BX_i%5D%20%3D%20C%5BX_i%5D%7D%7D%7BN%7D" />
-    
-    where
-        * **_N_** is the number of images
-        * <img src="https://latex.codecogs.com/svg.latex?\inline&space;C%5E%2A%5BX_i%5D%20%3D%20C%5Cbig%5Bargmax_%7BX_j%7D%20%5C%7BSim%28X_j%29%5C%7D%5Cbig%5D" />
-        * **_C[X_j]_** = class of sample **_X_j_**
+
+where
+
+	- **_N_** is the number of images
+	- <img src="https://latex.codecogs.com/svg.latex?\inline&space;C%5E%2A%5BX_i%5D%20%3D%20C%5Cbig%5Bargmax_%7BX_j%7D%20%5C%7BSim%28X_j%29%5C%7D%5Cbig%5D" />
+	- **_C[X_j]_** = class of sample **_X_j_**
 
 ### :bookmark_tabs: OCR
 
@@ -691,12 +693,13 @@ See [object detection metrics](#obj-detection-metrics)
 * **_Average Log-likelihood__**/**_Parzen density estimation_**
 * **_Inception score_**: Combined measure of likelihood (low entropy probability class distribution from a classification model like InceptionV3 for each generated sample) and variety (high entropy in the margin probability class distribution).I.e 
     <img src="https://latex.codecogs.com/svg.latex?exp%5Cbig%28E_%7Bx~G%28Z%29%7D%5CBig%5BKL%28p%28y%7Cx%29%7C%7Cp%28y%29%29%5Cbig%5D%5Cbig%29%20%3D%20exp%5Cbig%28E_%7Bx~G%28Z%29%7D%5CBig%5B%5Csum_%7By%7D%20p%28y%7Cx%29%20%5Ccdot%20%5Clog%20%5Cfrac%7Bp%28y%7Cx%29%7D%7Bp%28y%29%7D%5CBig%5D%29%5Cbig%29" />
-    
-    where
-        * **_KL_** is the Kullback–Leibler divergence
-        * **_x_** is a generated image
-        * <img src="https://latex.codecogs.com/svg.latex?\inline&space;p%28y%7Cx%29" /> is the predicted probability distribution of **Inception V3**  of image **_x_**
-        * **_p(y)_** marginal probability over all images generated
+
+where
+
+	- **_KL_** is the Kullback–Leibler divergence
+	- **_x_** is a generated image
+	- <img src="https://latex.codecogs.com/svg.latex?\inline&space;p%28y%7Cx%29" /> is the predicted probability distribution of **Inception V3**  of image **_x_**
+	- **_p(y)_** marginal probability over all images generated
 
 ### :paintbrush: Image Editing
 
@@ -723,15 +726,15 @@ See [object detection metrics](#obj-detection-metrics)
 
     <img src="https://latex.codecogs.com/svg.latex?MSE%28I%2C%5Chat%7BI%7D%29%20%3D%20%5Cfrac%7B1%7D%7BW%20%5Ccdot%20H%7D%20%5Ccdot%20%5Csum%5EH_%7Bi%3D1%7D%20%5Csum%5EW_%7Bj%3D1%7D%20%7CI_%7Bij%7D-%5Chat%7BI%7D_%7Bij%7D%7C%5E2" />
     <img src="https://latex.codecogs.com/svg.latex?PSNR%28I%2C%5Chat%7BI%7D%29%20%3D%2010%20%5Ccdot%20log_%7B10%7D%20%5Cfrac%7BL%5E2%7D%7BMSE%7D" />
-    
-    where **_L_** is the maximum value for a pixel (e.g. 255), **_W_** and **_H_** the image final width and high.
+
+where **_L_** is the maximum value for a pixel (e.g. 255), **_W_** and **_H_** the image final width and high.
 
 * **_SSIM_** (Structural Similarity): Weighted product of the comparison of luminance, contrast and structure computed independently.
 
     <img src="https://latex.codecogs.com/svg.latex?SSIM%28I%2C%5Chat%7BI%7D%29%20%3D%20%5Cmathcal%7BC%7D_l%28I%2C%5Chat%7BI%7D%29%5E%5Calpha%20%5Ccdot%20%20%5Cmathcal%7BC%7D_c%28I%2C%5Chat%7BI%7D%29%5E%5Cbeta%20%5Ccdot%20%5Cmathcal%7BC%7D_s%28I%2C%5Chat%7BI%7D%29%5E%5Cgamma" />
-    
-    where
-    
+
+where
+
 <img src="https://latex.codecogs.com/svg.latex?%5Cmathcal%7BC%7D_l%28I%2C%5Chat%7BI%7D%29%20%3D%20%5Cfrac%7B2%20%5Cmu_I%20%5Cmu_%7B%5Chat%7BI%7D%7D%20%2B%20c_1%7D%7B%5Cmu%5E2_I%20%2B%20%5Cmu%5E2_%7B%5Chat%7BI%7D%7D%20%2B%20c_1%7D" />
 <img src="https://latex.codecogs.com/svg.latex?%5Cmathcal%7BC%7D_c%28I%2C%5Chat%7BI%7D%29%20%3D%20%5Cfrac%7B2%20%5Csigma_I%20%5Csigma_%7B%5Chat%7BI%7D%7D%20%2B%20c_2%7D%7B%5Csigma%5E2_I%20%2B%20%5Csigma%5E2_%7B%5Chat%7BI%7D%7D%20%2B%20c_2%7D" />
 <img src="https://latex.codecogs.com/svg.latex?%5Cmathcal%7BC%7D_c%28I%2C%5Chat%7BI%7D%29%20%3D%20%5Cfrac%7B2%20%5Csigma_%7BI%2C%5Chat%7BI%7D%7D%20%2B%20c_3%7D%7B%5Csigma_I%20%2B%20%5Csigma_%7B%5Chat%7BI%7D%7D%20%2B%20c_3%7D" />
