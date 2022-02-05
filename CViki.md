@@ -271,11 +271,11 @@ Image classification refers to the task of extracting information classes from a
 
 #### Common Metrics
 
-* $Precision_{C}$: Percentage of correct predictions across all predictions of class $C$
-* $Recall_{C}$: Percentage of correct predictions across all ground truth of class $C$
-* $\mbox{F1-score}_{C}$: Harmonic mean of $Precision_C$ and $Recall_C$
-* $Accuracy$: Percentage of correct predictions
-* $Accuracy@K$: Percentage correct samples from Top $k$ predictions
+* <img src="https://latex.codecogs.com/svg.latex?\inline&space;Precision_%7BC%7D" />: Percentage of correct predictions across all predictions of class **_C_**
+* <img src="https://latex.codecogs.com/svg.latex?\inline&space;Recall_%7BC%7D" />: Percentage of correct predictions across all ground truth of class **_C_**
+* <img src="https://latex.codecogs.com/svg.latex?\inline&space;%5Cmbox%7BF1-score%7D_%7BC%7D" />: Harmonic mean of **_Precision_C_** and **_Recall_C_**
+* **_Accuracy_**: Percentage of correct predictions
+* **_Accuracy@K_**: Percentage correct samples from Top **_k_** predictions
 
 #### Pretrained models
 
@@ -358,9 +358,9 @@ Image classification refers to the task of extracting information classes from a
 #### Common Metrics
 <a name="obj-detection-metrics"></a>
 * **_IoU_**: Bounding box intersection over union of prediction and ground truth
-* $AP^{class}_{@k}$: Average Precision at IoU threhsold k
-* $mAP_{@k}$: Mean of $AP^{class}_{@k}$ across all $K$ classes
-* $AP$: Mean of $mAP_{@k}$ across different $k$ IoU thresholds
+* <img src="https://latex.codecogs.com/svg.latex?\inline&space;AP%5E%7Bclass%7D_%7B%40k%7D" />: Average Precision at IoU threhsold k
+* <img src="https://latex.codecogs.com/svg.latex?\inline&space;mAP_%7B%40k%7D" />: Mean of <img src="https://latex.codecogs.com/svg.latex?\inline&space;AP%5E%7Bclass%7D_%7B%40k%7D" /> across all **_K_** classes
+* **_AP_**: Mean of <img src="https://latex.codecogs.com/svg.latex?\inline&space;mAP_%7B%40k%7D" /> across different **_k_** IoU thresholds
 
 #### Pretrained models
 
@@ -483,28 +483,28 @@ Papers:
 
 * **PDJ**: Percentage of Detected Joints that distance from ground truth joints less than t% (e.g 5%) of the object permiter. I.e:
 
-    $$ PDJ = \frac{\sum^{N}_{i=1} \mathbb{1}_{d(p_i,g_i) < t \cdot d}}{N} $$
+    <img src="https://latex.codecogs.com/svg.latex?PDJ%20%3D%20%5Cfrac%7B%5Csum%5E%7BN%7D_%7Bi%3D1%7D%20%5Cmathbb%7B1%7D_%7Bd%28p_i%2Cg_i%29%20%3C%20t%20%5Ccdot%20d%7D%7D%7BN%7D" />
 
     where
-    * $N$: Number of object keypoints
-    * $p_i$: Coordinates of predicted keypoint
-    * $g_i$: Coordinates of ground truth keypoint
-    * $t$: Threshold
-    * $d$: Object diagonal size
+    * **_N_**: Number of object keypoints
+    * **_p_i_**: Coordinates of predicted keypoint
+    * **_g_i_**: Coordinates of ground truth keypoint
+    * **_t_**: Threshold
+    * **_d_**: Object diagonal size
     
 * **OKS**:
 
-    $$ OKS = \frac{\sum_{i=1}^N \mathbb{1}_{v_i>0} \cdot \exp\big(-\frac{d(p_i, g_i)}{2 s^2 k_i^2}\big) }{\sum_{i=1}^N \mathbb{1}_{v_i>0}} $$
+    <img src="https://latex.codecogs.com/svg.latex?OKS%20%3D%20%5Cfrac%7B%5Csum_%7Bi%3D1%7D%5EN%20%5Cmathbb%7B1%7D_%7Bv_i%3E0%7D%20%5Ccdot%20%5Cexp%5Cbig%28-%5Cfrac%7Bd%28p_i%2C%20g_i%29%7D%7B2%20s%5E2%20k_i%5E2%7D%5Cbig%29%20%7D%7B%5Csum_%7Bi%3D1%7D%5EN%20%5Cmathbb%7B1%7D_%7Bv_i%3E0%7D%7D" />
 
     where
-    * $N$: Number of object keypoints
-    * $p_i$: Coordinates of predicted keypoint
-    * $g_i$: Coordinates of ground truth keypoint
-    * $v_i$: Keypoint ground truth visibility
-    * $s$: Square root of object area
-    * $k_i$: Keypoint importance constant
+    * **_N_**: Number of object keypoints
+    * **_p_i_**: Coordinates of predicted keypoint
+    * **_g_i_**: Coordinates of ground truth keypoint
+    * **_v_i_**: Keypoint ground truth visibility
+    * **_s_**: Square root of object area
+    * **_k_i_**: Keypoint importance constant
 
-* **AP@k**: Average precision at $k$ OKS threshold 
+* **AP@k**: Average precision at **_k_** OKS threshold 
 
 #### Benchmark
 
@@ -553,14 +553,14 @@ Papers:
 
 #### Common Metrics
 
-* $Accuracy$/$Recall_{@1}$: Fraction of times where the class predicted from the closest sample matches the actual class. I.e:
+* **_Accuracy_**/<img src="https://latex.codecogs.com/svg.latex?\inline&space;Recall_%7B%401%7D" />: Fraction of times where the class predicted from the closest sample matches the actual class. I.e:
 
-    $$ \frac{\sum_{i=1}^{N} \mathbb{1}_{C^*[X_i] = C[X_i]}}{N} $$
+    <img src="https://latex.codecogs.com/svg.latex?%5Cfrac%7B%5Csum_%7Bi%3D1%7D%5E%7BN%7D%20%5Cmathbb%7B1%7D_%7BC%5E%2A%5BX_i%5D%20%3D%20C%5BX_i%5D%7D%7D%7BN%7D" />
     
     where
-        * $N$ is the number of images
-        * $C^*[X_i] = C\big[argmax_{X_j} \{Sim(X_j)\}\big]$
-        * $C[X_j]$ = class of sample $X_j$
+        * **_N_** is the number of images
+        * <img src="https://latex.codecogs.com/svg.latex?\inline&space;C%5E%2A%5BX_i%5D%20%3D%20C%5Cbig%5Bargmax_%7BX_j%7D%20%5C%7BSim%28X_j%29%5C%7D%5Cbig%5D" />
+        * **_C[X_j]_** = class of sample **_X_j_**
 
 ### :bookmark_tabs: OCR
 
@@ -690,13 +690,13 @@ See [object detection metrics](#obj-detection-metrics)
 * **Manual**: Qualitative analysis from humans
 * **_Average Log-likelihood__**/**_Parzen density estimation_**
 * **_Inception score_**: Combined measure of likelihood (low entropy probability class distribution from a classification model like InceptionV3 for each generated sample) and variety (high entropy in the margin probability class distribution).I.e 
-    $$ exp\big(E_{x~G(Z)}\Big[KL(p(y|x)||p(y))\big]\big) = exp\big(E_{x~G(Z)}\Big[\sum_{y} p(y|x) \cdot \log \frac{p(y|x)}{p(y)}\Big])\big) $$
+    <img src="https://latex.codecogs.com/svg.latex?exp%5Cbig%28E_%7Bx~G%28Z%29%7D%5CBig%5BKL%28p%28y%7Cx%29%7C%7Cp%28y%29%29%5Cbig%5D%5Cbig%29%20%3D%20exp%5Cbig%28E_%7Bx~G%28Z%29%7D%5CBig%5B%5Csum_%7By%7D%20p%28y%7Cx%29%20%5Ccdot%20%5Clog%20%5Cfrac%7Bp%28y%7Cx%29%7D%7Bp%28y%29%7D%5CBig%5D%29%5Cbig%29" />
     
     where
-        * $KL$ is the Kullback–Leibler divergence
-        * $x$ is a generated image
-        * $p(y|x)$ is the predicted probability distribution of **Inception V3**  of image $x$
-        * $p(y)$ marginal probability over all images generated
+        * **_KL_** is the Kullback–Leibler divergence
+        * **_x_** is a generated image
+        * <img src="https://latex.codecogs.com/svg.latex?\inline&space;p%28y%7Cx%29" /> is the predicted probability distribution of **Inception V3**  of image **_x_**
+        * **_p(y)_** marginal probability over all images generated
 
 ### :paintbrush: Image Editing
 
@@ -721,20 +721,20 @@ See [object detection metrics](#obj-detection-metrics)
 
 * **_PSNR_** (Peak signal to Noise ratio): Inverse of the logarithm of the Mean Squared Error (MSE) between the ground truth image and the generated image. I.e:
 
-    $$ MSE(I,\hat{I}) = \frac{1}{W \cdot H} \cdot \sum^H_{i=1} \sum^W_{j=1} |I_{ij}-\hat{I}_{ij}|^2 $$
-    $$ PSNR(I,\hat{I}) = 10 \cdot log_{10} \frac{L^2}{MSE} $$
+    <img src="https://latex.codecogs.com/svg.latex?MSE%28I%2C%5Chat%7BI%7D%29%20%3D%20%5Cfrac%7B1%7D%7BW%20%5Ccdot%20H%7D%20%5Ccdot%20%5Csum%5EH_%7Bi%3D1%7D%20%5Csum%5EW_%7Bj%3D1%7D%20%7CI_%7Bij%7D-%5Chat%7BI%7D_%7Bij%7D%7C%5E2" />
+    <img src="https://latex.codecogs.com/svg.latex?PSNR%28I%2C%5Chat%7BI%7D%29%20%3D%2010%20%5Ccdot%20log_%7B10%7D%20%5Cfrac%7BL%5E2%7D%7BMSE%7D" />
     
-    where $L$ is the maximum value for a pixel (e.g. 255), $W$ and $H$ the image final width and high.
+    where **_L_** is the maximum value for a pixel (e.g. 255), **_W_** and **_H_** the image final width and high.
 
 * **_SSIM_** (Structural Similarity): Weighted product of the comparison of luminance, contrast and structure computed independently.
 
-    $$ SSIM(I,\hat{I}) = \mathcal{C}_l(I,\hat{I})^\alpha \cdot  \mathcal{C}_c(I,\hat{I})^\beta \cdot \mathcal{C}_s(I,\hat{I})^\gamma $$
+    <img src="https://latex.codecogs.com/svg.latex?SSIM%28I%2C%5Chat%7BI%7D%29%20%3D%20%5Cmathcal%7BC%7D_l%28I%2C%5Chat%7BI%7D%29%5E%5Calpha%20%5Ccdot%20%20%5Cmathcal%7BC%7D_c%28I%2C%5Chat%7BI%7D%29%5E%5Cbeta%20%5Ccdot%20%5Cmathcal%7BC%7D_s%28I%2C%5Chat%7BI%7D%29%5E%5Cgamma" />
     
     where
     
-$$ \mathcal{C}_l(I,\hat{I}) = \frac{2 \mu_I \mu_{\hat{I}} + c_1}{\mu^2_I + \mu^2_{\hat{I}} + c_1} $$
-$$ \mathcal{C}_c(I,\hat{I}) = \frac{2 \sigma_I \sigma_{\hat{I}} + c_2}{\sigma^2_I + \sigma^2_{\hat{I}} + c_2} $$
-$$ \mathcal{C}_c(I,\hat{I}) = \frac{2 \sigma_{I,\hat{I}} + c_3}{\sigma_I + \sigma_{\hat{I}} + c_3} $$
+<img src="https://latex.codecogs.com/svg.latex?%5Cmathcal%7BC%7D_l%28I%2C%5Chat%7BI%7D%29%20%3D%20%5Cfrac%7B2%20%5Cmu_I%20%5Cmu_%7B%5Chat%7BI%7D%7D%20%2B%20c_1%7D%7B%5Cmu%5E2_I%20%2B%20%5Cmu%5E2_%7B%5Chat%7BI%7D%7D%20%2B%20c_1%7D" />
+<img src="https://latex.codecogs.com/svg.latex?%5Cmathcal%7BC%7D_c%28I%2C%5Chat%7BI%7D%29%20%3D%20%5Cfrac%7B2%20%5Csigma_I%20%5Csigma_%7B%5Chat%7BI%7D%7D%20%2B%20c_2%7D%7B%5Csigma%5E2_I%20%2B%20%5Csigma%5E2_%7B%5Chat%7BI%7D%7D%20%2B%20c_2%7D" />
+<img src="https://latex.codecogs.com/svg.latex?%5Cmathcal%7BC%7D_c%28I%2C%5Chat%7BI%7D%29%20%3D%20%5Cfrac%7B2%20%5Csigma_%7BI%2C%5Chat%7BI%7D%7D%20%2B%20c_3%7D%7B%5Csigma_I%20%2B%20%5Csigma_%7B%5Chat%7BI%7D%7D%20%2B%20c_3%7D" />
 
 #### Inpainting
 
