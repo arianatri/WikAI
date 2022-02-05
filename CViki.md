@@ -44,6 +44,7 @@
   * [ICDAR-2015](#ICDAR-2015)
   * [IIIT](#IIIT)
   * [FFHQ](#FFHQ)
+- [Annotation Tools](#Annotation-tools)
 - [Material](#Material)
   * [Books](#Books)
   * [Papers](#Papers)
@@ -983,7 +984,17 @@ where
 * **Images**: 70k at 1024x1024
 * **Tasks**:
 	* [Image synthesis](#art-Image-synthesis)
-    
+
+## Annotation Tools
+
+| Tool                                                       | UI  | Format |  Cloud | Classification | Detection | Landmarks | Segmentation | Model Integration |
+|-----------------------------------------------------------:|----:|-------:|-------:|---------------:|----------:|----------:|-------------:|------------------:|
+| [DataTorch](https://datatorch.io/)                         | Web | COCO   | OK     |                | OK        | OK        | OK           |  OK               |
+| [LabelImg](https://github.com/tzutalin/labelImg)           | Qt  | VOC    |        |                | OK        |           |              |                   |
+| [CVAT](https://github.com/openvinotoolkit/cvat)            | Web | All    | OK     |                | OK        | OK        | OK           | OK                |
+| [COCOAnnotator](https://github.com/jsbroks/coco-annotator) | Web | COCO   |        |                | OK        | OK        | OK           | OK                |
+| [Makesense.ai](https://www.makesense.ai/)                  | Web | COCO   | OK     |      OK        | OK        | OK        | OK           |                   | 
+
 ## Material
 
 ### :books: Books
