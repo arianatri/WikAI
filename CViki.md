@@ -227,11 +227,11 @@
 - :house: **Main page**: https://openmmlab.com/
 - ![GitHub icon](https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg) **GitHub**: https://github.com/open-mmlab/mmcv ![GitHub stars](https://img.shields.io/github/stars/open-mmlab/mmcv?style=social)
 - <img src="https://pypi.org/static/images/logo-small.95de8436.svg" width=32 />**PyPI**:
-	- **MMCV**: https://pypi.org/project/mmcv [![PyPi version](https://badgen.net/pypi/v/mmcv/)](https://pypi.org/project/mmcv)
-	- **MMClassification**: https://pypi.org/project/mmcls [![PyPi version](https://badgen.net/pypi/v/mmcls)](https://pypi.org/project/mmcls)
-	- **MMDetection**: https://pypi.org/project/mmdet [![PyPi version](https://badgen.net/pypi/v/mmdet/)](https://pypi.org/project/mmdet)
-	- **MMSegmentation**: https://pypi.org/project/mmsegmentation [![PyPi version](https://badgen.net/pypi/v/mmsegmentation/)](https://pypi.org/project/mmsegmentation)
-	- **MMPose**: https://pypi.org/project/mmpose [![PyPi version](https://badgen.net/pypi/v/mmpose/)](https://pypi.org/project/mmpose)
+  - **MMCV**: https://pypi.org/project/mmcv [![PyPi version](https://badgen.net/pypi/v/mmcv/)](https://pypi.org/project/mmcv)
+  - **MMClassification**: https://pypi.org/project/mmcls [![PyPi version](https://badgen.net/pypi/v/mmcls)](https://pypi.org/project/mmcls)
+  - **MMDetection**: https://pypi.org/project/mmdet [![PyPi version](https://badgen.net/pypi/v/mmdet/)](https://pypi.org/project/mmdet)
+  - **MMSegmentation**: https://pypi.org/project/mmsegmentation [![PyPi version](https://badgen.net/pypi/v/mmsegmentation/)](https://pypi.org/project/mmsegmentation)
+  - **MMPose**: https://pypi.org/project/mmpose [![PyPi version](https://badgen.net/pypi/v/mmpose/)](https://pypi.org/project/mmpose)
 - :blue_book: **Docs**: https://mmcv.readthedocs.io/en/latest/
     - [Image classification (MMClassification)](https://mmclassification.readthedocs.io/en/latest/)
     - [Object detection (MMDetection)](https://mmdetection.readthedocs.io/en/latest/)
@@ -487,11 +487,11 @@ Papers:
 
 where
 
-	- **_N_**: Number of object keypoints
-	- **_p_i_**: Coordinates of predicted keypoint
-	- **_g_i_**: Coordinates of ground truth keypoint
-	- **_t_**: Threshold
-	- **_d_**: Object diagonal size
+  - **_N_**: Number of object keypoints
+  - **_p_i_**: Coordinates of predicted keypoint
+  - **_g_i_**: Coordinates of ground truth keypoint
+  - **_t_**: Threshold
+  - **_d_**: Object diagonal size
 
 * **OKS**:
 
@@ -499,13 +499,13 @@ where
 
 where
 
-	- **_N_**: Number of object keypoints
-	- **_p_i_**: Coordinates of predicted keypoint
-	- **_g_i_**: Coordinates of ground truth keypoint
-	- **_v_i_**: Keypoint ground truth visibility
-	- **_s_**: Square root of object area
-	- **_k_i_**: Keypoint importance constant
-	- **AP@k**: Average precision at **_k_** OKS threshold 
+  - **_N_**: Number of object keypoints
+  - **_p_i_**: Coordinates of predicted keypoint
+  - **_g_i_**: Coordinates of ground truth keypoint
+  - **_v_i_**: Keypoint ground truth visibility
+  - **_s_**: Square root of object area
+  - **_k_i_**: Keypoint importance constant
+  - **AP@k**: Average precision at **_k_** OKS threshold 
 
 #### Benchmark
 
@@ -560,9 +560,9 @@ where
 
 where
 
-	- **_N_** is the number of images
-	- <img src="https://latex.codecogs.com/svg.latex?\inline&space;C%5E%2A%5BX_i%5D%20%3D%20C%5Cbig%5Bargmax_%7BX_j%7D%20%5C%7BSim%28X_j%29%5C%7D%5Cbig%5D" />
-	- **_C[X_j]_** = class of sample **_X_j_**
+  - **_N_** is the number of images
+  - <img src="https://latex.codecogs.com/svg.latex?\inline&space;C%5E%2A%5BX_i%5D%20%3D%20C%5Cbig%5Bargmax_%7BX_j%7D%20%5C%7BSim%28X_j%29%5C%7D%5Cbig%5D" />
+  - **_C[X_j]_** = class of sample **_X_j_**
 
 ### :bookmark_tabs: OCR
 
@@ -696,10 +696,10 @@ See [object detection metrics](#obj-detection-metrics)
 
 where
 
-	- **_KL_** is the Kullback–Leibler divergence
-	- **_x_** is a generated image
-	- <img src="https://latex.codecogs.com/svg.latex?\inline&space;p%28y%7Cx%29" /> is the predicted probability distribution of **Inception V3**  of image **_x_**
-	- **_p(y)_** marginal probability over all images generated
+  - **_KL_** is the Kullback–Leibler divergence
+  - **_x_** is a generated image
+  - <img src="https://latex.codecogs.com/svg.latex?\inline&space;p%28y%7Cx%29" /> is the predicted probability distribution of **Inception V3**  of image **_x_**
+  - **_p(y)_** marginal probability over all images generated
 
 ### :paintbrush: Image Editing
 
