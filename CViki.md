@@ -269,6 +269,14 @@ Image classification refers to the task of extracting information classes from a
 | <a name="VGG">VGG</a>                   | [Very Deep Convolutional Networks for Large-Scale Image Recognition](https://arxiv.org/abs/1409.1556)                  | Sep-2014    |
 | <a name="AlexNet">AlexNet</a>           | [One weird trick for parallelizing convolutional neural networks](https://arxiv.org/abs/1404.5997)                     | Apr-2014    |
 
+#### Common Metrics
+
+* $Precision_{C}$: Percentage of correct predictions across all predictions of class $C$
+* $Recall_{C}$: Percentage of correct predictions across all ground truth of class $C$
+* $\mbox{F1-score}_{C}$: Harmonic mean of $Precision_C$ and $Recall_C$
+* $Accuracy$: Percentage of correct predictions
+* $Accuracy@K$: Percentage correct samples from Top $k$ predictions
+
 #### Pretrained models
 
 * [<img src="https://pytorch.org/favicon.ico" width="32" />Torchvision](https://pytorch.org/vision/stable/models.html#classification)
@@ -323,9 +331,7 @@ Image classification refers to the task of extracting information classes from a
 | [MNASNet](#MNASNet)           | MNASNet 0-75       | 2018     | 3          |            |
 | [MNASNet](#MNASNet)           | MNASNet 1-3        | 2018     | 6          |            |
 
-
-
-* Acc@1: Top-1 Accuracy on ImageNet at 224x224 resolution
+* Acc@1: Accuracy@1 on ImageNet at 224x224 resolution
 
 ### :mag: Object detection
 
@@ -348,6 +354,13 @@ Image classification refers to the task of extracting information classes from a
 | <a name="FastR-CNN">Fast R-CNN</a>       | [Fast R-CNN](https://arxiv.org/abs/1504.08083)                                                                      | Sep-2015    |
 | <a name="YOLOv1">YOLOv1</a>              | [You Only Look Once: Unified, Real-Time Object Detection](https://arxiv.org/abs/1506.02640)                         | Jun-2015    |
 | <a name="R-CNN">R-CNN</a>                | [Rich feature hierarchies for accurate object detection and semantic segmentation](https://arxiv.org/abs/1311.2524) | Oct-2013    |
+
+#### Common Metrics
+<a name="obj-detection-metrics"></a>
+* **_IoU_**: Bounding box intersection over union of prediction and ground truth
+* $AP^{class}_{@k}$: Average Precision at IoU threhsold k
+* $mAP_{@k}$: Mean of $AP^{class}_{@k}$ across all $K$ classes
+* $AP$: Mean of $mAP_{@k}$ across different $k$ IoU thresholds
 
 #### Pretrained models
 
@@ -408,6 +421,10 @@ Image classification refers to the task of extracting information classes from a
 * [<img src="https://oss.openmmlab.com/www/community/openmmlab.png" width=32/>Open MMLab (MMSegmentation)](https://mmsegmentation.readthedocs.io/en/latest/model_zoo.html)
 * [<img src="https://production-media.paperswithcode.com/libraries/dete.png" width="32">Detectron2](https://github.com/facebookresearch/detectron2/blob/main/MODEL_ZOO.md#coco-object-detection-baselines)
 
+#### Common Metrics
+
+* **mIoU** (**Jaccard index**): Mean of IoU across all classes
+
 
 #### Benchmark
 
@@ -424,7 +441,7 @@ Image classification refers to the task of extracting information classes from a
 | FCN       | [ResNet-18-D8](#ResNet)  |   2017 |    71.11 |
 | UNet      | UNet-S5-D16              |   2016 |    69.1  |
 
-* mIoU: Mean IoU on CityScapes at 512x1024 resolution
+* mIoU: mIoU on CityScapes at 512x1024 resolution
 
 ### :pushpin: Landmark/Keypoint Extraction
 
@@ -462,6 +479,32 @@ Papers:
 | <a name="CPM">CPM</a>             | [Convolutional Pose Machines](https://arxiv.org/abs/1602.00134)                                              | Jan-2016    |
 | <a name="Deep-Pose">Deep Pose</a> | [DeepPose: Human Pose Estimation via Deep Neural Networks](https://arxiv.org/abs/1312.4659)                  | Dec-2013    |
 
+#### Common Metrics
+
+* **PDJ**: Percentage of Detected Joints that distance from ground truth joints less than t% (e.g 5%) of the object permiter. I.e:
+
+    $$ PDJ = \frac{\sum^{N}_{i=1} \mathbb{1}_{d(p_i,g_i) < t \cdot d}}{N} $$
+
+    where
+    * $N$: Number of object keypoints
+    * $p_i$: Coordinates of predicted keypoint
+    * $g_i$: Coordinates of ground truth keypoint
+    * $t$: Threshold
+    * $d$: Object diagonal size
+    
+* **OKS**:
+
+    $$ OKS = \frac{\sum_{i=1}^N \mathbb{1}_{v_i>0} \cdot \exp\big(-\frac{d(p_i, g_i)}{2 s^2 k_i^2}\big) }{\sum_{i=1}^N \mathbb{1}_{v_i>0}} $$
+
+    where
+    * $N$: Number of object keypoints
+    * $p_i$: Coordinates of predicted keypoint
+    * $g_i$: Coordinates of ground truth keypoint
+    * $v_i$: Keypoint ground truth visibility
+    * $s$: Square root of object area
+    * $k_i$: Keypoint importance constant
+
+* **AP@k**: Average precision at $k$ OKS threshold 
 
 #### Benchmark
 
@@ -508,6 +551,17 @@ Papers:
 
 * [<img src="https://oss.openmmlab.com/www/community/openmmlab.png" width=32/>Open MMLab (MMFewShot)](https://mmfewshot.readthedocs.io/en/latest/model_zoo.html)
 
+#### Common Metrics
+
+* $Accuracy$/$Recall_{@1}$: Fraction of times where the class predicted from the closest sample matches the actual class. I.e:
+
+    $$ \frac{\sum_{i=1}^{N} \mathbb{1}_{C^*[X_i] = C[X_i]}}{N} $$
+    
+    where
+        * $N$ is the number of images
+        * $C^*[X_i] = C\big[argmax_{X_j} \{Sim(X_j)\}\big]$
+        * $C[X_j]$ = class of sample $X_j$
+
 ### :bookmark_tabs: OCR
 
 #### Text Detection
@@ -521,7 +575,12 @@ Papers:
 | [Efficient and Accurate Arbitrary-Shaped Text Detection with Pixel Aggregation Network](https://arxiv.org/abs/1908.05900v2) | Aug-2019    |    81 |    84 |    82 |
 | [Multi-Oriented Text Detection with Fully Convolutional Networks](https://arxiv.org/abs/1604.04018v2)                       | Apr-2016    |    88 |    78 |    73 |
 
-* R, P, F: Recall, Precision and F1-Score on ICDAR-2015
+* R, P, F: Recall, Precision and F1-Score on ICDAR-2015 at IoU 0.5
+
+##### Common Metrics
+
+See [object detection metrics](#obj-detection-metrics)
+
 
 ##### Pretrained models
 
@@ -626,6 +685,19 @@ Papers:
 	* [StyleGAN](https://github.com/NVlabs/stylegan#using-pre-trained-networks)
 	* [StyleGAN2](https://github.com/NVlabs/stylegan2#using-pre-trained-networks)
 
+#### Common Metrics
+
+* **Manual**: Qualitative analysis from humans
+* **_Average Log-likelihood__**/**_Parzen density estimation_**
+* **_Inception score_**: Combined measure of likelihood (low entropy probability class distribution from a classification model like InceptionV3 for each generated sample) and variety (high entropy in the margin probability class distribution).I.e 
+    $$ exp\big(E_{x~G(Z)}\Big[KL(p(y|x)||p(y))\big]\big) = exp\big(E_{x~G(Z)}\Big[\sum_{y} p(y|x) \cdot \log \frac{p(y|x)}{p(y)}\Big])\big) $$
+    
+    where
+        * $KL$ is the Kullback–Leibler divergence
+        * $x$ is a generated image
+        * $p(y|x)$ is the predicted probability distribution of **Inception V3**  of image $x$
+        * $p(y)$ marginal probability over all images generated
+
 ### :paintbrush: Image Editing
 
 #### Super-Resolution
@@ -644,6 +716,25 @@ Papers:
 | EDSR    | [Enhanced Deep Residual Networks for Single Image Super-Resolution](https://arxiv.org/abs/1707.02921)                    | Jul-2017    |
 | SRGan   | [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network](https://arxiv.org/abs/1609.04802) | Sep-2016    |
 | SR-CNN  | [Image Super-Resolution Using Deep Convolutional Networks](https://arxiv.org/abs/1501.00092)                             | Dec-2014    |
+
+##### Common metrics
+
+* **_PSNR_** (Peak signal to Noise ratio): Inverse of the logarithm of the Mean Squared Error (MSE) between the ground truth image and the generated image. I.e:
+
+    $$ MSE(I,\hat{I}) = \frac{1}{W \cdot H} \cdot \sum^H_{i=1} \sum^W_{j=1} |I_{ij}-\hat{I}_{ij}|^2 $$
+    $$ PSNR(I,\hat{I}) = 10 \cdot log_{10} \frac{L^2}{MSE} $$
+    
+    where $L$ is the maximum value for a pixel (e.g. 255), $W$ and $H$ the image final width and high.
+
+* **_SSIM_** (Structural Similarity): Weighted product of the comparison of luminance, contrast and structure computed independently.
+
+    $$ SSIM(I,\hat{I}) = \mathcal{C}_l(I,\hat{I})^\alpha \cdot  \mathcal{C}_c(I,\hat{I})^\beta \cdot \mathcal{C}_s(I,\hat{I})^\gamma $$
+    
+    where
+    
+$$ \mathcal{C}_l(I,\hat{I}) = \frac{2 \mu_I \mu_{\hat{I}} + c_1}{\mu^2_I + \mu^2_{\hat{I}} + c_1} $$
+$$ \mathcal{C}_c(I,\hat{I}) = \frac{2 \sigma_I \sigma_{\hat{I}} + c_2}{\sigma^2_I + \sigma^2_{\hat{I}} + c_2} $$
+$$ \mathcal{C}_c(I,\hat{I}) = \frac{2 \sigma_{I,\hat{I}} + c_3}{\sigma_I + \sigma_{\hat{I}} + c_3} $$
 
 #### Inpainting
 
