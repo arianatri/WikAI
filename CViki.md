@@ -989,11 +989,11 @@ where
 
 | Tool                                                       | UI  | Format |  Cloud | Classification | Detection | Landmarks | Segmentation | Model Integration |
 |-----------------------------------------------------------:|----:|-------:|-------:|---------------:|----------:|----------:|-------------:|------------------:|
-| [DataTorch](https://datatorch.io/)                         | Web | COCO   | OK     |                | OK        | OK        | OK           |  OK               |
-| [LabelImg](https://github.com/tzutalin/labelImg)           | Qt  | VOC    |        |                | OK        |           |              |                   |
-| [CVAT](https://github.com/openvinotoolkit/cvat)            | Web | All    | OK     |                | OK        | OK        | OK           | OK                |
-| [COCOAnnotator](https://github.com/jsbroks/coco-annotator) | Web | COCO   |        |                | OK        | OK        | OK           | OK                |
-| [Makesense.ai](https://www.makesense.ai/)                  | Web | COCO   | OK     |      OK        | OK        | OK        | OK           |                   | 
+| [DataTorch](https://datatorch.io/)                         | Web | COCO   | :heavy_check_mark: |                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| [LabelImg](https://github.com/tzutalin/labelImg)           | Qt  | VOC    |        |                | :heavy_check_mark: |           |              |                   |
+| [CVAT](https://github.com/openvinotoolkit/cvat)            | Web | All    | :heavy_check_mark: |                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| [COCOAnnotator](https://github.com/jsbroks/coco-annotator) | Web | COCO   |        |                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| [Makesense.ai](https://www.makesense.ai/)                  | Web | COCO   | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                   | 
 
 ## Material
 
