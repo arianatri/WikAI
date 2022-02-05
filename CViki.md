@@ -249,7 +249,7 @@ Image classification refers to the task of extracting information classes from a
 
 #### Models
 
-| Model                                   | Paper                                                                                                                  | Published   |
+| Model                                   | Paper                                                                                                                  | ↓ Published |
 |:----------------------------------------|:-----------------------------------------------------------------------------------------------------------------------|:------------|
 | <a name="Swim">Swin</a>                 | [Swin Transformer: Hierarchical Vision Transformer using Shifted Windows](https://arxiv.org/abs/2103.14030)            | Mar-2021    |
 | <a name="ViT">ViT</a>                   | [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929)         | Oct-2020    |
@@ -278,7 +278,7 @@ Image classification refers to the task of extracting information classes from a
 
 #### Benchmark
 
-| Family                        | Network            | Year     | #P (*M*)   | *  Acc@1   |
+| Family                        | Network            | Year     | #P (*M*)   | ↓ *  Acc@1 |
 |:------------------------------|:-------------------|:---------|:-----------|:-----------|
 | [ViT](#ViT)                   | ViT-H/14           | 2020     | 632        | 88.55      |
 | [ViT](#ViT)                   | ViT-L/14           | 2020     | 307        | 87.46      |
@@ -335,7 +335,7 @@ Image classification refers to the task of extracting information classes from a
 
 #### Models
 
-| Model                                    | Paper                                                                                                               | Published   |
+| Model                                    | Paper                                                                                                               | ↓ Published |
 |:-----------------------------------------|:--------------------------------------------------------------------------------------------------------------------|:------------|
 | <a name="DETR">DETR</a>                  | [End-to-End Object Detection with Transformers](https://arxiv.org/abs/2005.12872)                                   | May-2020    |
 | <a name="YOLOv3">YOLOv3</a>              | [YOLOv3: An Incremental Improvement](https://arxiv.org/abs/1804.02767v1)                                            | Apr-2018    |
@@ -359,7 +359,7 @@ Image classification refers to the task of extracting information classes from a
 
 #### Benchmark
 
-| Family                         | Network                  | Backbone                      |   Year | * AP   |
+| Family                         | Network                  | Backbone                      |   Year | ↓ * AP |
 |:-------------------------------|:-------------------------|:------------------------------|-------:|:-------|
 | [DETR](#DETR)                  | DETR-DC5-R101            | [ResNet-101 + DC](#ResNet)    |   2020 | 44.9   |
 | [DETR](#DETR)                  | DETR-DC5                 | [ResNet-50 + DC](#ResNet)     |   2020 | 43.3   |
@@ -390,7 +390,7 @@ Image classification refers to the task of extracting information classes from a
 
 #### Models
 
-| Model                             | Paper                                                                                                 | Published   |
+| Model                             | Paper                                                                                                 | ↓ Published |
 |:----------------------------------|:------------------------------------------------------------------------------------------------------|:------------|
 | <a name="DANet">DANet</a>         | [Dual Attention Network for Scene Segmentation](https://arxiv.org/abs/1809.02983)                     | Sep-2018    |
 | <a name="UPerNet">UPerNet</a>     | [Unified Perceptual Parsing for Scene Understanding](https://arxiv.org/abs/1807.10221)                | Jul-2018    |
@@ -411,7 +411,7 @@ Image classification refers to the task of extracting information classes from a
 
 #### Benchmark
 
-| Family    | Backbone                 |   Year |   * mIoU |
+| Family    | Backbone                 |   Year | ↓ * mIoU |
 |:----------|:-------------------------|-------:|---------:|
 | DANet     | [ResNet-101-D8](#ResNet) |   2018 |    80.41 |
 | UPerNet   | [ResNet-101](#ResNet)    |   2018 |    79.4  |
@@ -455,7 +455,7 @@ Papers:
 
 #### Models
 
-| Model                             | Paper                                                                                                        | Published   |
+| Model                             | Paper                                                                                                        | ↓ Published |
 |:----------------------------------|:-------------------------------------------------------------------------------------------------------------|:------------|
 | <a name="RSN">RSN</a>             | [Learning Delicate Local Representations for Multi-Person Pose Estimation](https://arxiv.org/abs/2003.04030) | Mar-2020    |
 | <a name="HRNet">HRNet</a>         | [Deep High-Resolution Representation Learning for Visual Recognition](https://arxiv.org/abs/1908.07919)      | Aug-2019    |
@@ -465,7 +465,7 @@ Papers:
 
 #### Benchmark
 
-| Family                  | Method                               | Backbone                    |   Year |   * AP |
+| Family                  | Method                               | Backbone                    |   Year | ↓ * AP |
 |:------------------------|:-------------------------------------|:----------------------------|-------:|-------:|
 | [HRNet](HRNet)          | Multi-Scale High-Resolution Networks | HRNet-w48                   |   2019 |   75.6 |
 | [RSN](#RSN)             | Top-down Heatmap                     | 3x ResNet-50                |   2020 |   75   |
@@ -491,7 +491,7 @@ Papers:
 
 #### Models
 
-| Paper                                                                                                           | Backbone                | R@1   | Published   |
+| Paper                                                                                                           | Backbone                | R@1   | ↓ Published |
 |:----------------------------------------------------------------------------------------------------------------|:------------------------|:------|:------------|
 | [Calibrated neighborhood aware confidence measure for deep metric learning](https://arxiv.org/abs/2006.04935v1) | ??                      | 74.9  | Jun-2020    |
 | [Negative Margin Matters: Understanding Margin in Few-shot Classification](https://arxiv.org/abs/2003.12060)    | [ResNet-18](#ResNet)    | 72.7  | Mar-2020    |
@@ -514,7 +514,7 @@ Papers:
 
 ##### Models
 
-| Paper                                                                                                                       | Published   |   * R |   * P |   * F |
+| Paper                                                                                                                       | Published   |   * R |   * P | ↓ * F |
 |:----------------------------------------------------------------------------------------------------------------------------|:------------|------:|------:|------:|
 | [TextFuseNet: Scene Text Detection with Richer Fused Features](https://www.ijcai.org/proceedings/2020/72)                   | Jul-2020    |    89 |    91 |    90 |
 | [Single Shot Text Detector with Regional Attention](https://arxiv.org/abs/1709.00138v1)                                     | Sep-2017    |    86 |    88 |    87 |
@@ -531,7 +531,7 @@ Papers:
 
 ##### Models
 
-| Paper | Published | * Acc |
+| Paper | Published | ↓ * Acc|
 |-------|-----------|--------|
 | [Read Like Humans: Autonomous, Bidirectional and Iterative Language Modeling for Scene Text Recognition](https://arxiv.org/abs/2103.06495) | Mar-2021 | 96.2 |
 
@@ -562,7 +562,7 @@ Papers:
 
 ##### Models
 
-| Model         | Paper                                                                                                                                      | Published   |
+| Model         | Paper                                                                                                                                      | ↓ Published |
 |:--------------|:-------------------------------------------------------------------------------------------------------------------------------------------|:------------|
 | SwinStyle     | [StyleSwin: Transformer-based GAN for High-resolution Image Generation](https://arxiv.org/abs/2112.10762)                                  | Dec-2021    |
 | StyleGAN3     | [Alias-Free Generative Adversarial Networks](https://arxiv.org/abs/2106.12423)                                                             | Jun-2021    |
@@ -586,7 +586,7 @@ Papers:
 
 ##### Models
 
-| Model   | Paper                                                                                          | Published   |
+| Model   | Paper                                                                                          | ↓ Published |
 |:--------|:-----------------------------------------------------------------------------------------------|:------------|
 | BigGAN  | [Large Scale Adversarial Representation Learning](https://arxiv.org/abs/1907.02544v2)          | Jul-2019    |
 | SAGAN   | [Self-Attention Generative Adversarial Networks](https://arxiv.org/abs/1805.08318)             | May-2018    |
@@ -599,7 +599,7 @@ Papers:
 
 ##### Models
 
-| Model       | Paper                                                                                                                                           | Published   |
+| Model       | Paper                                                                                                                                           | ↓ Published |
 |:------------|:------------------------------------------------------------------------------------------------------------------------------------------------|:------------|
 | DAFormer    | [DAFormer: Improving Network Architectures and Training Strategies for Domain-Adaptive Semantic Segmentation](https://arxiv.org/abs/2111.14887) | Nov-2021    |
 | CC-FPSE-AUG | [Improving Augmentation and Evaluation Schemes for Semantic Image Synthesis](https://arxiv.org/abs/2011.12636)                                  | Nov-2020    |
@@ -611,7 +611,7 @@ Papers:
 
 ##### Models
 
-| Paper                                                                                                                      | Published   |
+| Paper                                                                                                                      | ↓ Published |
 |:---------------------------------------------------------------------------------------------------------------------------|:------------|
 | [A Closed-form Solution to Photorealistic Image Stylization](https://arxiv.org/abs/1802.06474v5)                           | Feb-2018    |
 | [Universal Style Transfer via Feature Transforms](https://arxiv.org/abs/1705.08086)                                        | May-2017    |
@@ -634,7 +634,7 @@ Papers:
 
 ##### Models
 
-| Model   | Paper                                                                                                                    | Published   |
+| Model   | Paper                                                                                                                    | ↓ Published |
 |:--------|:-------------------------------------------------------------------------------------------------------------------------|:------------|
 | SwinIR  | [SwinIR: Image Restoration Using Swin Transformer](https://arxiv.org/abs/2108.10257v1)                                   | Aug-2021    |
 | GLEAN   | [GLEAN: Generative Latent Bank for Large-Factor Image Super-Resolution](https://arxiv.org/abs/2012.00739)                | Dec-2020    |
@@ -651,7 +651,7 @@ Papers:
 
 ##### Models
 
-| Model      | Paper                                                                                                    | Published   |
+| Model      | Paper                                                                                                    | ↓ Published |
 |:-----------|:---------------------------------------------------------------------------------------------------------|:------------|
 | BRGM       | [Bayesian Image Reconstruction using Deep Generative Models](https://arxiv.org/abs/2012.04567v5)         | Dec-2021    |
 | GIP        | [Image Completion and Extrapolation with Contextual Cycle Consistency](https://arxiv.org/abs/2006.02620) | Jun-2020    |
