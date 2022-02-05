@@ -249,25 +249,25 @@ Image classification refers to the task of extracting information classes from a
 
 #### Models
 
-| Model                                   | Paper                                                        | Published |
-| :-------------------------------------- | :----------------------------------------------------------- | :-------- |
-| <a name="AlexNet">AlexNet</a>           | [One weird trick for parallelizing convolutional neural networks](https://arxiv.org/abs/1404.5997) | Apr-2014  |
-| <a name="GoogleLeNet">GoogLeNet</a>     | [Going Deeper with Convolutions](arxiv.org/abs/1409.4842)    | Sep-2014  |
-| <a name="VGG">VGG</a>                   | [Very Deep Convolutional Networks for Large-Scale Image Recognition](https://arxiv.org/abs/1409.1556) | Sep-2014  |
-| <a name="InceptionV3">InceptionV3</a>   | [Rethinking the Inception Architecture for Computer Vision](https://arxiv.org/abs/1512.00567) | Dec-2015  |
-| <a name="ResNet">ResNet</a>             | [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385) | Dec-2015  |
-| <a name="SqueezeNet">SqueezeNet</a>     | [SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size](https://arxiv.org/abs/1602.07360) | Feb-2016  |
-| <a name="Wide ResNet">Wide ResNet</a>   | [Wide Residual Networks](https://arxiv.org/abs/1605.07146)   | May-2016  |
-| <a name="DenseNet">DenseNet</a>         | [Densely Connected Convolutional Networks](https://arxiv.org/abs/1608.06993) | Aug-2016  |
-| <a name="ResNeXt">ResNeXt</a>           | [Aggregated Residual Transformations for Deep Neural Networks](https://arxiv.org/abs/1611.05431) | Nov-2016  |
-| <a name="DarknetV1">DarknetV1</a>       | [YOLO9000: Better, Faster, Stronger](https://arxiv.org/abs/1612.08242v1) | Dec-2016  |
-| <a name="MobileNetV2">MobileNetV2</a>   | [MobileNetV2: Inverted Residuals and Linear Bottlenecks](https://arxiv.org/abs/1801.04381) | Jan-2018  |
-| <a name="DarknetV2">DarknetV2</a>       | [YOLOv3: An Incremental Improvement](https://arxiv.org/abs/1804.02767v1) | Apr-2018  |
-| <a name="MNASNet">MNASNet</a>           | [MnasNet: Platform-Aware Neural Architecture Search for Mobile](https://arxiv.org/abs/1807.11626) | Jul-2018  |
-| <a name="MobileNetV3">MobileNetV3</a>   | [Searching for MobileNetV3](https://arxiv.org/abs/1905.02244) | May-2019  |
-| <a name="EfficientNet">EfficientNet</a> | [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/abs/1905.11946) | May-2019  |
-| <a name="ViT">ViT</a>                   | [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929) | Oct-2020  |
-| <a name="Swim">Swin</a>                 | [Swin Transformer: Hierarchical Vision Transformer using Shifted Windows](https://arxiv.org/abs/2103.14030) | Mar-2021  |
+| Model                                   | Paper                                                                                                                  | Published   |
+|:----------------------------------------|:-----------------------------------------------------------------------------------------------------------------------|:------------|
+| <a name="Swim">Swin</a>                 | [Swin Transformer: Hierarchical Vision Transformer using Shifted Windows](https://arxiv.org/abs/2103.14030)            | Mar-2021    |
+| <a name="ViT">ViT</a>                   | [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929)         | Oct-2020    |
+| <a name="EfficientNet">EfficientNet</a> | [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/abs/1905.11946)           | May-2019    |
+| <a name="MobileNetV3">MobileNetV3</a>   | [Searching for MobileNetV3](https://arxiv.org/abs/1905.02244)                                                          | May-2019    |
+| <a name="MNASNet">MNASNet</a>           | [MnasNet: Platform-Aware Neural Architecture Search for Mobile](https://arxiv.org/abs/1807.11626)                      | Jul-2018    |
+| <a name="DarknetV2">DarknetV2</a>       | [YOLOv3: An Incremental Improvement](https://arxiv.org/abs/1804.02767v1)                                               | Apr-2018    |
+| <a name="MobileNetV2">MobileNetV2</a>   | [MobileNetV2: Inverted Residuals and Linear Bottlenecks](https://arxiv.org/abs/1801.04381)                             | Jan-2018    |
+| <a name="DarknetV1">DarknetV1</a>       | [YOLO9000: Better, Faster, Stronger](https://arxiv.org/abs/1612.08242v1)                                               | Dec-2016    |
+| <a name="ResNeXt">ResNeXt</a>           | [Aggregated Residual Transformations for Deep Neural Networks](https://arxiv.org/abs/1611.05431)                       | Nov-2016    |
+| <a name="DenseNet">DenseNet</a>         | [Densely Connected Convolutional Networks](https://arxiv.org/abs/1608.06993)                                           | Aug-2016    |
+| <a name="Wide ResNet">Wide ResNet</a>   | [Wide Residual Networks](https://arxiv.org/abs/1605.07146)                                                             | May-2016    |
+| <a name="SqueezeNet">SqueezeNet</a>     | [SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size](https://arxiv.org/abs/1602.07360) | Feb-2016    |
+| <a name="ResNet">ResNet</a>             | [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385)                                       | Dec-2015    |
+| <a name="InceptionV3">InceptionV3</a>   | [Rethinking the Inception Architecture for Computer Vision](https://arxiv.org/abs/1512.00567)                          | Dec-2015    |
+| <a name="GoogleLeNet">GoogLeNet</a>     | [Going Deeper with Convolutions](arxiv.org/abs/1409.4842)                                                              | Sep-2014    |
+| <a name="VGG">VGG</a>                   | [Very Deep Convolutional Networks for Large-Scale Image Recognition](https://arxiv.org/abs/1409.1556)                  | Sep-2014    |
+| <a name="AlexNet">AlexNet</a>           | [One weird trick for parallelizing convolutional neural networks](https://arxiv.org/abs/1404.5997)                     | Apr-2014    |
 
 #### Pretrained models
 
@@ -278,50 +278,50 @@ Image classification refers to the task of extracting information classes from a
 
 #### Benchmark
 
-| Family       | Network            | Year | #P (*M*) | *  Acc@1 |
-| ------------ | ------------------ | ---- | -------- | -------- |
-| [AlexNet](#AlexNet)      | AlexNet            | Apr-2014 | 61       | 56.522   |
-| [VGG](#VGG)          | VGG-11 (BN)        | Sep-2014 | 133      | 70.370   |
-| [VGG](#VGG)          | VGG-13 (BN)        | Sep-2014 | 133      | 71.586   |
-| [VGG](#VGG)          | VGG-16 (BN)        | Sep-2014 | 138      | 73.360   |
-| [VGG](#VGG)          | VGG-19 (BN)        | Sep-2014 | 144      | 74.218   |
-| [GoogLeNet](#GoogLeNet)    | GoogLeNet          | 2014 | 13       | 69.778   |
-| [ResNet](#ResNet)       | ResNet-18          | 2015 | 12       | 69.758   |
-| [ResNet](#ResNet)       | ResNet-34          | 2015 | 22       | 73.314   |
-| [ResNet](#ResNet)       | ResNet-50          | 2015 | 26       | 76.130   |
-| [ResNet](#ResNet)       | ResNet-50          | 2015 | 45       | 77.374   |
-| [ResNet](#ResNet)       | ResNet-101         | 2015 | 50       | 78.312   |
-| [InceptionV3](#InceptionV3) | Inception-V3       | 2015 | 27       | 77.294   |
-| [SqueezeNet](#SqueezeNet)   | SqueezeNet 1.0     | 2016 | 1        | 58.092   |
-| [SqueezeNet](#SqueezeNet)   | SqueezeNet 1.1     | 2016 | 1        | 58.178   |
-| [DenseNet](#DenseNet)     | DenseNet-121       | 2016 | 8        | 74.434   |
-| [DenseNet](#DenseNet)     | DenseNet-126       | 2016 | 29       | 75.600   |
-| [DenseNet](#DenseNet)     | DenseNet-169       | 2016 | 14       | 75.600   |
-| [DenseNet](#DenseNet)     | DenseNet-201       | 2016 | 20       | 76.896   |
-| [DarknetV1](#DarknetV1) | Darknet-19         | 2016 | ?        | 72.9     |
-| [Darknet](#Darknet)      | Darknet-53         | 2016 | ?        | 77.2     |
-| [Wide ResNet](#Wide-ResNet)  | Wide ResNet-50-2   | 2017 | 69       | 78.468   |
-| [Wide ResNet](#Wide-ResNet)   | Wide ResNet-101-2  | 2017 | 127      | 78.848   |
-| [MobileNet](#MobileNet)    | MobileNet-v2       | 2018 | 4        | 71.878   |
-| [MobileNet](#MobileNet)    | MobileNet-v3-small | 2018 | 3        | 67.668   |
-| [MobileNet](#MobileNet)    | MobileNet-v3-large | 2018 | 5        | 74.042   |
-| [MNASNet](#MNASNet)      | MNASNet 0-5        | 2018 | 2        | 67.734   |
-| [MNASNet](#MNASNet)      | MNASNet 0-75       | 2018 | 3        | ??       |
-| [MNASNet](#MNASNet)      | MNASNet 1-0        | 2018 | 4        | 73.456   |
-| [MNASNet](#MNASNet)      | MNASNet 1-3        | 2018 | 6        | ??       |
-| [EfficientNet](#EfficientNet) | EfficientNet B0    | 2019 | 5        | 77.692   |
-| [EfficientNet](#EfficientNet) | EfficientNet B1    | 2019 | 8        | 78.642   |
-| [EfficientNet](#EfficientNet) | EfficientNet B2    | 2019 | 9        | 80.608   |
-| [EfficientNet](#EfficientNet) | EfficientNet B3    | 2019 | 12       | 82.008   |
-| [EfficientNet](#EfficientNet) | EfficientNet B4    | 2019 | 19       | 83.384   |
-| [EfficientNet](#EfficientNet) | EfficientNet B5    | 2019 | 30       | 83.444   |
-| [EfficientNet](#EfficientNet) | EfficientNet B6    | 2019 | 43       | 84.008   |
-| [EfficientNet](#EfficientNet) | EfficientNet B6    | 2019 | 66       | 84.122   |
-| [Swin](#Swin)         | Swin-S             | 2021 | 49       | 83.21    |
-| [Swin](#Swin)         | Swin-B             | 2021 | 87       | 85.16    |
-| [Swin](#Swin)         | Swin-L             | 2021 | 196      | 86.24    |
-| [ViT](#ViT)          | ViT-L/14           | 2020 | 307      | 87.46    |
-| [ViT](#ViT)          | ViT-H/14           | 2020 | 632      | 88.55    |
+| Family                        | Network            | Year     | #P (*M*)   | *  Acc@1   |
+|:------------------------------|:-------------------|:---------|:-----------|:-----------|
+| [ViT](#ViT)                   | ViT-H/14           | 2020     | 632        | 88.55      |
+| [ViT](#ViT)                   | ViT-L/14           | 2020     | 307        | 87.46      |
+| [Swin](#Swin)                 | Swin-L             | 2021     | 196        | 86.24      |
+| [Swin](#Swin)                 | Swin-B             | 2021     | 87         | 85.16      |
+| [EfficientNet](#EfficientNet) | EfficientNet B6    | 2019     | 66         | 84.122     |
+| [EfficientNet](#EfficientNet) | EfficientNet B6    | 2019     | 43         | 84.008     |
+| [EfficientNet](#EfficientNet) | EfficientNet B5    | 2019     | 30         | 83.444     |
+| [EfficientNet](#EfficientNet) | EfficientNet B4    | 2019     | 19         | 83.384     |
+| [Swin](#Swin)                 | Swin-S             | 2021     | 49         | 83.21      |
+| [EfficientNet](#EfficientNet) | EfficientNet B3    | 2019     | 12         | 82.008     |
+| [EfficientNet](#EfficientNet) | EfficientNet B2    | 2019     | 9          | 80.608     |
+| [Wide ResNet](#Wide-ResNet)   | Wide ResNet-101-2  | 2017     | 127        | 78.848     |
+| [EfficientNet](#EfficientNet) | EfficientNet B1    | 2019     | 8          | 78.642     |
+| [Wide ResNet](#Wide-ResNet)   | Wide ResNet-50-2   | 2017     | 69         | 78.468     |
+| [ResNet](#ResNet)             | ResNet-101         | 2015     | 50         | 78.312     |
+| [EfficientNet](#EfficientNet) | EfficientNet B0    | 2019     | 5          | 77.692     |
+| [ResNet](#ResNet)             | ResNet-50          | 2015     | 45         | 77.374     |
+| [InceptionV3](#InceptionV3)   | Inception-V3       | 2015     | 27         | 77.294     |
+| [Darknet](#Darknet)           | Darknet-53         | 2016     | ?          | 77.2       |
+| [DenseNet](#DenseNet)         | DenseNet-201       | 2016     | 20         | 76.896     |
+| [ResNet](#ResNet)             | ResNet-50          | 2015     | 26         | 76.13      |
+| [DenseNet](#DenseNet)         | DenseNet-126       | 2016     | 29         | 75.6       |
+| [DenseNet](#DenseNet)         | DenseNet-169       | 2016     | 14         | 75.6       |
+| [DenseNet](#DenseNet)         | DenseNet-121       | 2016     | 8          | 74.434     |
+| [VGG](#VGG)                   | VGG-19 (BN)        | 2014     | 144        | 74.218     |
+| [MobileNet](#MobileNet)       | MobileNet-v3-large | 2018     | 5          | 74.042     |
+| [MNASNet](#MNASNet)           | MNASNet 1-0        | 2018     | 4          | 73.456     |
+| [VGG](#VGG)                   | VGG-16 (BN)        | 2014     | 138        | 73.36      |
+| [ResNet](#ResNet)             | ResNet-34          | 2015     | 22         | 73.314     |
+| [DarknetV1](#DarknetV1)       | Darknet-19         | 2016     | ?          | 72.9       |
+| [MobileNet](#MobileNet)       | MobileNet-v2       | 2018     | 4          | 71.878     |
+| [VGG](#VGG)                   | VGG-13 (BN)        | 2014     | 133        | 71.586     |
+| [VGG](#VGG)                   | VGG-11 (BN)        | 2014     | 133        | 70.37      |
+| [GoogLeNet](#GoogLeNet)       | GoogLeNet          | 2014     | 13         | 69.778     |
+| [ResNet](#ResNet)             | ResNet-18          | 2015     | 12         | 69.758     |
+| [MNASNet](#MNASNet)           | MNASNet 0-5        | 2018     | 2          | 67.734     |
+| [MobileNet](#MobileNet)       | MobileNet-v3-small | 2018     | 3          | 67.668     |
+| [SqueezeNet](#SqueezeNet)     | SqueezeNet 1.1     | 2016     | 1          | 58.178     |
+| [SqueezeNet](#SqueezeNet)     | SqueezeNet 1.0     | 2016     | 1          | 58.092     |
+| [AlexNet](#AlexNet)           | AlexNet            | 2014     | 61         | 56.522     |
+| [MNASNet](#MNASNet)           | MNASNet 0-75       | 2018     | 3          |            |
+| [MNASNet](#MNASNet)           | MNASNet 1-3        | 2018     | 6          |            |
 
 
 
@@ -335,19 +335,19 @@ Image classification refers to the task of extracting information classes from a
 
 #### Models
 
-| Model | Paper | Published |
-|----------|---------|---------------|
-| <a name="R-CNN">R-CNN</a> | [Rich feature hierarchies for accurate object detection and semantic segmentation](https://arxiv.org/abs/1311.2524) | Oct-2013 |
-| <a name="FastR-CNN">Fast R-CNN</a> | [Fast R-CNN](https://arxiv.org/abs/1504.08083) | Sep-2015 |
-| <a name="FasterR-CNN">Faster R-CNN</a> | [Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks](https://arxiv.org/abs/1506.01497) | Jan-2016 |
-| <a name="YOLOv1">YOLOv1</a> | [You Only Look Once: Unified, Real-Time Object Detection](https://arxiv.org/abs/1506.02640) | Jun-2015 |
-| <a name="YOLOv2">YOLOv2</a> | [YOLO9000: Better, Faster, Stronger](https://arxiv.org/abs/1612.08242v1) | Dec-2016 |
-| <a name="SSD">SSD</a> | [SSD: Single Shot MultiBox Detector](https://arxiv.org/abs/1512.02325) | Dec-2015 |
-| <a name="YOLOv3">YOLOv3</a> | [YOLOv3: An Incremental Improvement](https://arxiv.org/abs/1804.02767v1) | Apr-2018 |
-| <a name="RetinaNet">RetinaNet</a> | [Focal Loss for Dense Object Detection](https://arxiv.org/abs/1708.02002) | Feb-2018 |
-| <a name="MaskRCNN">MaskRCNN</a> | [Mask R-CNN](https://arxiv.org/abs/1703.06870) | Mar-2017 |
-| <a name="CascadeR-CNN">Cascade R-CNN</a> | [Cascade R-CNN: Delving into High Quality Object Detection](https://arxiv.org/abs/1712.00726) | Dec-2017 |
-| <a name="DETR">DETR</a> | [End-to-End Object Detection with Transformers](https://arxiv.org/abs/2005.12872) | May-2020 |
+| Model                                    | Paper                                                                                                               | Published   |
+|:-----------------------------------------|:--------------------------------------------------------------------------------------------------------------------|:------------|
+| <a name="DETR">DETR</a>                  | [End-to-End Object Detection with Transformers](https://arxiv.org/abs/2005.12872)                                   | May-2020    |
+| <a name="YOLOv3">YOLOv3</a>              | [YOLOv3: An Incremental Improvement](https://arxiv.org/abs/1804.02767v1)                                            | Apr-2018    |
+| <a name="RetinaNet">RetinaNet</a>        | [Focal Loss for Dense Object Detection](https://arxiv.org/abs/1708.02002)                                           | Feb-2018    |
+| <a name="CascadeR-CNN">Cascade R-CNN</a> | [Cascade R-CNN: Delving into High Quality Object Detection](https://arxiv.org/abs/1712.00726)                       | Dec-2017    |
+| <a name="MaskRCNN">MaskRCNN</a>          | [Mask R-CNN](https://arxiv.org/abs/1703.06870)                                                                      | Mar-2017    |
+| <a name="YOLOv2">YOLOv2</a>              | [YOLO9000: Better, Faster, Stronger](https://arxiv.org/abs/1612.08242v1)                                            | Dec-2016    |
+| <a name="FasterR-CNN">Faster R-CNN</a>   | [Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks](https://arxiv.org/abs/1506.01497)  | Jan-2016    |
+| <a name="SSD">SSD</a>                    | [SSD: Single Shot MultiBox Detector](https://arxiv.org/abs/1512.02325)                                              | Dec-2015    |
+| <a name="FastR-CNN">Fast R-CNN</a>       | [Fast R-CNN](https://arxiv.org/abs/1504.08083)                                                                      | Sep-2015    |
+| <a name="YOLOv1">YOLOv1</a>              | [You Only Look Once: Unified, Real-Time Object Detection](https://arxiv.org/abs/1506.02640)                         | Jun-2015    |
+| <a name="R-CNN">R-CNN</a>                | [Rich feature hierarchies for accurate object detection and semantic segmentation](https://arxiv.org/abs/1311.2524) | Oct-2013    |
 
 #### Pretrained models
 
@@ -359,23 +359,24 @@ Image classification refers to the task of extracting information classes from a
 
 #### Benchmark
 
-| Family       | Network                  | Backbone          | Year | * AP |
-|----|----|----|---|--|
-| [R-CNN](#R-CNN)        | R-CNN                    | ??                | 2013 | -    |
-| [Fast R-CNN](#FastR-CNN)   | Fast R-CNN               | [VGG16](#VGG)  | 2015 | 19.7 |
-| [Faster R-CNN](#FasterR-CNN) | Faster R-CNN             | [VGG16](#VGG)                 | 2016 | 21.9 |
-| [YOLOv1](#YOLOv1)     | YOLO V1                  | * [GoogLeNet](#GoogLeNet) | 2015 | -    |
-| [YOLOv2](#YOLOv2)     | YOLO V2                  | [Darknet-19](DarknetV1) | 2016 | 21.6 |
-| [SSD](#SSD)          | SSD300                   | [VGG16](#VGG)                 | 2016 | 23.2 |
-| [SSD](#SSD)          | SSD500                   | [VGG16](#VGG)                 | 2016 | 26.8 |
-| [Cascade R-CNN](#CascadeR-CNN) | Cascade-R-CNN-100        | [ResNet-101](#ResNet) | 2017 | 42.8 |
-| [YOLOv3](#YOLOv3)     | YOLO V3                  | [Darknet-53](#DarknetV2) | 2018 | 33.0 |
-| [RetinaNet](#RetinaNet)    | RetinaNet-ResNet-101     | [ResNet-101-FPN](#ResNet) | 2017 | 39.1 |
-| [RetinaNet](#RetinaNet)    | RetinaNet-ResNeXt-101    | [ResNeXt-101-FPN](#ResNeXt) | 2017 | 40.8 |
-| [MaskRCNN](#MaskRCNN)     | MaskRCNN R-101-FPN       | [ResNet-101-FP](#ResNet) | 2018 | 40.8 |
-| [MaskRCNN](#MaskRCNN)     | MaskRCNN X-101-64x4d-FPN | [ResNeXt-101-64x4d](#ResNeXt) | 2018 | 42.7 |
-| [DETR](#DETR)         | DETR-DC5                 | [ResNet-50 + DC](#ResNet) | 2020 | 43.3 |
-| [DETR](#DETR)         | DETR-DC5-R101            | [ResNet-101 + DC](#ResNet) | 2020 | 44.9 |
+| Family                         | Network                  | Backbone                      |   Year | * AP   |
+|:-------------------------------|:-------------------------|:------------------------------|-------:|:-------|
+| [DETR](#DETR)                  | DETR-DC5-R101            | [ResNet-101 + DC](#ResNet)    |   2020 | 44.9   |
+| [DETR](#DETR)                  | DETR-DC5                 | [ResNet-50 + DC](#ResNet)     |   2020 | 43.3   |
+| [Cascade R-CNN](#CascadeR-CNN) | Cascade-R-CNN-100        | [ResNet-101](#ResNet)         |   2017 | 42.8   |
+| [MaskRCNN](#MaskRCNN)          | MaskRCNN X-101-64x4d-FPN | [ResNeXt-101-64x4d](#ResNeXt) |   2018 | 42.7   |
+| [RetinaNet](#RetinaNet)        | RetinaNet-ResNeXt-101    | [ResNeXt-101-FPN](#ResNeXt)   |   2017 | 40.8   |
+| [MaskRCNN](#MaskRCNN)          | MaskRCNN R-101-FPN       | [ResNet-101-FP](#ResNet)      |   2018 | 40.8   |
+| [RetinaNet](#RetinaNet)        | RetinaNet-ResNet-101     | [ResNet-101-FPN](#ResNet)     |   2017 | 39.1   |
+| [YOLOv3](#YOLOv3)              | YOLO V3                  | [Darknet-53](#DarknetV2)      |   2018 | 33.0   |
+| [SSD](#SSD)                    | SSD500                   | [VGG16](#VGG)                 |   2016 | 26.8   |
+| [SSD](#SSD)                    | SSD300                   | [VGG16](#VGG)                 |   2016 | 23.2   |
+| [Faster R-CNN](#FasterR-CNN)   | Faster R-CNN             | [VGG16](#VGG)                 |   2016 | 21.9   |
+| [YOLOv2](#YOLOv2)              | YOLO V2                  | [Darknet-19](DarknetV1)       |   2016 | 21.6   |
+| [Fast R-CNN](#FastR-CNN)       | Fast R-CNN               | [VGG16](#VGG)                 |   2015 | 19.7   |
+| [R-CNN](#R-CNN)                | R-CNN                    | ??                            |   2013 |        |
+| [YOLOv1](#YOLOv1)              | YOLO V1                  | * [GoogLeNet](#GoogLeNet)     |   2015 |        |
+
 
 * AP: AP[.5:.05:0.95] on COCO test-dev
 
@@ -389,15 +390,15 @@ Image classification refers to the task of extracting information classes from a
 
 #### Models
 
-| Model | Paper | Published |
-|----------|----------|--------------|
-| <a name="UNet">U-Net</a> | [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597) | May-2015 |
-| <a name="FCN-old">FCN</a> | [Fully Convolutional Networks for Semantic Segmentation](https://arxiv.org/abs/1411.4038) | Nov-2014 |
-| <a name="FCN">FCN</a> | [Improving Fully Convolution Network for Semantic Segmentation](https://arxiv.org/pdf/1611.08986.pdf) | Nov-2016 |
-| <a name="DeepLabV3">DeepLabV3</a> | [Rethinking Atrous Convolution for Semantic Image Segmentation](https://arxiv.org/abs/1706.05587v3) | Jun-2017 |
-| <a name="PSPNet">PSPNet</a> | [Pyramid Scene Parsing Network](https://arxiv.org/abs/1612.01105) | Dec-2016 |
-| <a name="UPerNet">UPerNet</a> | [Unified Perceptual Parsing for Scene Understanding](https://arxiv.org/abs/1807.10221) | Jul-2018 |
-| <a name="DANet">DANet</a> | [Dual Attention Network for Scene Segmentation](https://arxiv.org/abs/1809.02983) | Sep-2018 |
+| Model                             | Paper                                                                                                 | Published   |
+|:----------------------------------|:------------------------------------------------------------------------------------------------------|:------------|
+| <a name="DANet">DANet</a>         | [Dual Attention Network for Scene Segmentation](https://arxiv.org/abs/1809.02983)                     | Sep-2018    |
+| <a name="UPerNet">UPerNet</a>     | [Unified Perceptual Parsing for Scene Understanding](https://arxiv.org/abs/1807.10221)                | Jul-2018    |
+| <a name="DeepLabV3">DeepLabV3</a> | [Rethinking Atrous Convolution for Semantic Image Segmentation](https://arxiv.org/abs/1706.05587v3)   | Jun-2017    |
+| <a name="PSPNet">PSPNet</a>       | [Pyramid Scene Parsing Network](https://arxiv.org/abs/1612.01105)                                     | Dec-2016    |
+| <a name="FCN">FCN</a>             | [Improving Fully Convolution Network for Semantic Segmentation](https://arxiv.org/pdf/1611.08986.pdf) | Nov-2016    |
+| <a name="UNet">U-Net</a>          | [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597)   | May-2015    |
+| <a name="FCN-old">FCN</a>         | [Fully Convolutional Networks for Semantic Segmentation](https://arxiv.org/abs/1411.4038)             | Nov-2014    |
 
 #### Pretrained models
 
@@ -410,18 +411,18 @@ Image classification refers to the task of extracting information classes from a
 
 #### Benchmark
 
-| Family    | Backbone                 | Year | * mIoU |
-| --------- | ------------------------ | ---- | ------ |
-| UNet      | UNet-S5-D16              | 2016 | 69.10  |
-| FCN       | [ResNet-18-D8](#ResNet)  | 2017 | 71.11  |
-| FCN       | [ResNet-50-D8](#ResNet)  | 2017 | 73.61  |
-| FCN       | [ResNet-101-D8](#ResNet) | 2017 | 76.80  |
-| DeepLabV3 | [ResNet-50-D8](#ResNet)  | 2017 | 77.85  |
-| PSPNet    | [ResNet-101-D8](#ResNet) | 2016 | 78.34  |
-| UPerNet   | [ResNet-50](#ResNet)     | 2018 | 78.19  |
-| UPerNet   | [ResNet-101](#ResNet)    | 2018 | 79.40  |
-| DANet     | [ResNet-50-D8](#ResNet)  | 2018 | 79.34  |
-| DANet     | [ResNet-101-D8](#ResNet) | 2018 | 80.41  |
+| Family    | Backbone                 |   Year |   * mIoU |
+|:----------|:-------------------------|-------:|---------:|
+| DANet     | [ResNet-101-D8](#ResNet) |   2018 |    80.41 |
+| UPerNet   | [ResNet-101](#ResNet)    |   2018 |    79.4  |
+| DANet     | [ResNet-50-D8](#ResNet)  |   2018 |    79.34 |
+| PSPNet    | [ResNet-101-D8](#ResNet) |   2016 |    78.34 |
+| UPerNet   | [ResNet-50](#ResNet)     |   2018 |    78.19 |
+| DeepLabV3 | [ResNet-50-D8](#ResNet)  |   2017 |    77.85 |
+| FCN       | [ResNet-101-D8](#ResNet) |   2017 |    76.8  |
+| FCN       | [ResNet-50-D8](#ResNet)  |   2017 |    73.61 |
+| FCN       | [ResNet-18-D8](#ResNet)  |   2017 |    71.11 |
+| UNet      | UNet-S5-D16              |   2016 |    69.1  |
 
 * mIoU: Mean IoU on CityScapes at 512x1024 resolution
 
@@ -454,30 +455,30 @@ Papers:
 
 #### Models
 
-| Model                                   | Paper                                                        | Published |
-| :-------------------------------------- | :----------------------------------------------------------- | :-------- |
-| <a name="Deep-Pose">Deep Pose</a> | [DeepPose: Human Pose Estimation via Deep Neural Networks](https://arxiv.org/abs/1312.4659) | Dec-2013 |
-| <a name="CPM">CPM</a> | [Convolutional Pose Machines](https://arxiv.org/abs/1602.00134) | Jan-2016 |
-| <a name="RSN">RSN</a> | [Learning Delicate Local Representations for Multi-Person Pose Estimation](https://arxiv.org/abs/2003.04030) | Mar-2020 |
-| <a name="HRNet">HRNet</a> | [Deep High-Resolution Representation Learning for Visual Recognition](https://arxiv.org/abs/1908.07919) | Aug-2019 |
+| Model                             | Paper                                                                                                        | Published   |
+|:----------------------------------|:-------------------------------------------------------------------------------------------------------------|:------------|
+| <a name="RSN">RSN</a>             | [Learning Delicate Local Representations for Multi-Person Pose Estimation](https://arxiv.org/abs/2003.04030) | Mar-2020    |
+| <a name="HRNet">HRNet</a>         | [Deep High-Resolution Representation Learning for Visual Recognition](https://arxiv.org/abs/1908.07919)      | Aug-2019    |
+| <a name="CPM">CPM</a>             | [Convolutional Pose Machines](https://arxiv.org/abs/1602.00134)                                              | Jan-2016    |
+| <a name="Deep-Pose">Deep Pose</a> | [DeepPose: Human Pose Estimation via Deep Neural Networks](https://arxiv.org/abs/1312.4659)                  | Dec-2013    |
 
 
 #### Benchmark
 
-| Family      | Method          | Backbone       | Year | * AP |
-| ----------- | --------------- | -------------- | ---- | ---- |
-| [Deep Pose](#Deep-Pose) | Cascade         | [Resnet-50](#ResNet) | 2014 | 52.6 |
-| [Deep Pose](#Deep-Pose) | Cascade         | [Resnet-101]((#ResNet)) | 2014 | 56.0 |
-| [Deep Pose](#Deep-Pose) | Cascade         | [Resnet-152]((#ResNet)) | 2014 | 58.3 |
-| [CPM](#CPM) | Top-down heatmap | ?              | 2016 | 62.3 |
-| ResnetV1    | Top-down Heatmap | [ResnetV1D-50]((#ResNet)) | 2019 | 72.2 |
-| ResnetV1    | Top-down Heatmap | [ResnetV1D-100]((#ResNet)) | 2019 | 73.1 |
-| ResnetV1    | Top-down Heatmap | [Resnet-152](#ResNet) | 2019 | 73.7 |
-| VGG         | Top-down Heatmap | [VGG-16](#VGG) | 2015 | 69.8 |
-| Mobilenetv2 | Top-down Heatmap | [MobileNetV2](#MobileNetV2) | 2018 | 64.6 |
-| [RSN](#RSN) | Top-down Heatmap | ResNet-18    | 2020 | 70.4 |
-| [RSN](#RSN)             | Top-down Heatmap | 3x ResNet-50 | 2020 | 75.0 |
-| [HRNet](HRNet) | Multi-Scale High-Resolution Networks | HRNet-w48 | 2019 | 75.6 |
+| Family                  | Method                               | Backbone                    |   Year |   * AP |
+|:------------------------|:-------------------------------------|:----------------------------|-------:|-------:|
+| [HRNet](HRNet)          | Multi-Scale High-Resolution Networks | HRNet-w48                   |   2019 |   75.6 |
+| [RSN](#RSN)             | Top-down Heatmap                     | 3x ResNet-50                |   2020 |   75   |
+| ResnetV1                | Top-down Heatmap                     | [Resnet-152](#ResNet)       |   2019 |   73.7 |
+| ResnetV1                | Top-down Heatmap                     | [ResnetV1D-100]((#ResNet))  |   2019 |   73.1 |
+| ResnetV1                | Top-down Heatmap                     | [ResnetV1D-50]((#ResNet))   |   2019 |   72.2 |
+| [RSN](#RSN)             | Top-down Heatmap                     | ResNet-18                   |   2020 |   70.4 |
+| VGG                     | Top-down Heatmap                     | [VGG-16](#VGG)              |   2015 |   69.8 |
+| Mobilenetv2             | Top-down Heatmap                     | [MobileNetV2](#MobileNetV2) |   2018 |   64.6 |
+| [CPM](#CPM)             | Top-down heatmap                     | ?                           |   2016 |   62.3 |
+| [Deep Pose](#Deep-Pose) | Cascade                              | [Resnet-152]((#ResNet))     |   2014 |   58.3 |
+| [Deep Pose](#Deep-Pose) | Cascade                              | [Resnet-101]((#ResNet))     |   2014 |   56   |
+| [Deep Pose](#Deep-Pose) | Cascade                              | [Resnet-50](#ResNet)        |   2014 |   52.6 |
 
 * AP: Average precision on COCO-2017 at 256x192 resolution
 
@@ -490,18 +491,18 @@ Papers:
 
 #### Models
 
-| Paper | Backbone | R@1 | Published |
-|---------|------------|---------|---------|
-| [Siamese Neural Networks for One-shot Image Recognition](https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf) | _Custom_                |      | Aug-2016 |
-| [Hardness-Aware Deep Metric Learning](https://arxiv.org/abs/1903.05503)  | [GoogLeNet](#GoogLeNet) | 43.6 | Mar-2019 |
-| [Local Similarity-Aware Deep Feature Embedding](https://arxiv.org/abs/1610.08904) | [GoogLeNet](#GoogLeNet) | 58.3 | Oct-2016 |
-| [Hard-Aware Deeply Cascaded Embedding](https://arxiv.org/abs/1611.05720) | [GoogLeNet](#GoogLeNet) | 60.7 | Nov-2016 |
-| [Sampling Matters in Deep Embedding Learning](https://arxiv.org/abs/1706.07567) | [ResNet-50](#ResNet)    | 63.9 | Jun-2017 |
-| [SoftTriple Loss: Deep Metric Learning Without Triplet Sampling](https://arxiv.org/abs/1909.05235) | [GoogLeNet](#GoogLeNet) | 65.4 | Sep-2019 |
-| [Calibrated neighborhood aware confidence measure for deep metric learning](https://arxiv.org/abs/2006.04935v1) | ?? | 74.9 | Jun-2020 |
-| [A Closer Look at Few-shot Classification](https://arxiv.org/abs/1904.04232) | Conv4 | 60.5 | Jan-2020 |
-| [Negative Margin Matters: Understanding Margin in Few-shot Classification](https://arxiv.org/abs/2003.12060) | [ResNet-18](#ResNet) | 72.7 | Mar-2020 |
-| [Prototypical Networks for Few-shot Learning](https://arxiv.org/pdf/1703.05175.pdf) | [GoogLeNet](#GoogLeNet) | 54.6 | Jun-2016 |
+| Paper                                                                                                           | Backbone                | R@1   | Published   |
+|:----------------------------------------------------------------------------------------------------------------|:------------------------|:------|:------------|
+| [Calibrated neighborhood aware confidence measure for deep metric learning](https://arxiv.org/abs/2006.04935v1) | ??                      | 74.9  | Jun-2020    |
+| [Negative Margin Matters: Understanding Margin in Few-shot Classification](https://arxiv.org/abs/2003.12060)    | [ResNet-18](#ResNet)    | 72.7  | Mar-2020    |
+| [A Closer Look at Few-shot Classification](https://arxiv.org/abs/1904.04232)                                    | Conv4                   | 60.5  | Jan-2020    |
+| [SoftTriple Loss: Deep Metric Learning Without Triplet Sampling](https://arxiv.org/abs/1909.05235)              | [GoogLeNet](#GoogLeNet) | 65.4  | Sep-2019    |
+| [Hardness-Aware Deep Metric Learning](https://arxiv.org/abs/1903.05503)                                         | [GoogLeNet](#GoogLeNet) | 43.6  | Mar-2019    |
+| [Sampling Matters in Deep Embedding Learning](https://arxiv.org/abs/1706.07567)                                 | [ResNet-50](#ResNet)    | 63.9  | Jun-2017    |
+| [Hard-Aware Deeply Cascaded Embedding](https://arxiv.org/abs/1611.05720)                                        | [GoogLeNet](#GoogLeNet) | 60.7  | Nov-2016    |
+| [Local Similarity-Aware Deep Feature Embedding](https://arxiv.org/abs/1610.08904)                               | [GoogLeNet](#GoogLeNet) | 58.3  | Oct-2016    |
+| [Siamese Neural Networks for One-shot Image Recognition](https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf)  | _Custom_                |       | Aug-2016    |
+| [Prototypical Networks for Few-shot Learning](https://arxiv.org/pdf/1703.05175.pdf)                             | [GoogLeNet](#GoogLeNet) | 54.6  | Jun-2016    |
 
 #### Pretrained models
 
@@ -513,12 +514,12 @@ Papers:
 
 ##### Models
 
-| Paper | Published | * R | * P | * F |
-|-------|-----------|--------|-----------|----------|
-| [Multi-Oriented Text Detection with Fully Convolutional Networks](https://arxiv.org/abs/1604.04018v2) | Apr-2016 | 88 | 78 | 73 |
-| [Single Shot Text Detector with Regional Attention](https://arxiv.org/abs/1709.00138v1) | Sep-2017 | 86 | 88 | 87 |
-| [Efficient and Accurate Arbitrary-Shaped Text Detection with Pixel Aggregation Network](https://arxiv.org/abs/1908.05900v2) | Aug-2019 | 81 | 84 | 82 |
-| [TextFuseNet: Scene Text Detection with Richer Fused Features](https://www.ijcai.org/proceedings/2020/72) | Jul-2020 | 89 | 91 | 90 |
+| Paper                                                                                                                       | Published   |   * R |   * P |   * F |
+|:----------------------------------------------------------------------------------------------------------------------------|:------------|------:|------:|------:|
+| [TextFuseNet: Scene Text Detection with Richer Fused Features](https://www.ijcai.org/proceedings/2020/72)                   | Jul-2020    |    89 |    91 |    90 |
+| [Single Shot Text Detector with Regional Attention](https://arxiv.org/abs/1709.00138v1)                                     | Sep-2017    |    86 |    88 |    87 |
+| [Efficient and Accurate Arbitrary-Shaped Text Detection with Pixel Aggregation Network](https://arxiv.org/abs/1908.05900v2) | Aug-2019    |    81 |    84 |    82 |
+| [Multi-Oriented Text Detection with Fully Convolutional Networks](https://arxiv.org/abs/1604.04018v2)                       | Apr-2016    |    88 |    78 |    73 |
 
 * R, P, F: Recall, Precision and F1-Score on ICDAR-2015
 
@@ -561,23 +562,23 @@ Papers:
 
 ##### Models
 
-| Model | Paper | Published |
-|-------|-------|-----------|
-| GAN | [Generative Adversarial Networks](https://arxiv.org/abs/1406.2661) | Jun-2014 |
-| DCGAN | [Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks](https://arxiv.org/abs/1511.06434) | Nov-2015 |
-| VAE-GAN | [Autoencoding beyond pixels using a learned similarity metric](https://arxiv.org/abs/1512.09300) | Dec-2015 |
-| InfoGAN | [InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets](https://arxiv.org/abs/1606.03657v1) | Jan-2016 |
-| BiGAN | [Adversarial Feature Learning](https://arxiv.org/abs/1605.09782v7) | May-2016 |
-| LSGAN | [Least Squares Generative Adversarial Networks](https://arxiv.org/abs/1611.04076) | Nov-2016 |
-| WGAN | [Wasserstein GAN](https://arxiv.org/abs/1701.07875v3) | Jan-2017 |
-| GGAN | [Geometric GAN](https://arxiv.org/abs/1705.02894) | May-2017 |
-| ProGAN | [Progressive Growing of GANs for Improved Quality, Stability, and Variation](https://arxiv.org/abs/1710.10196) | Oct-2017 |
-| StyleGAN | [A Style-Based Generator Architecture for Generative Adversarial Networks](https://arxiv.org/abs/1812.04948) | Dec-2018 |
-| LOGAN | [LOGAN: Latent Optimisation for Generative Adversarial Networks](https://arxiv.org/abs/1912.00953) | Dec-2019 |
-| StyleGAN2 | [Analyzing and Improving the Image Quality of StyleGAN](https://arxiv.org/abs/1912.04958) | Dec-2019 |
-| Improved-DDPM | [Improved Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2102.09672) | Feb-2021 |
-| StyleGAN3 | [Alias-Free Generative Adversarial Networks](https://arxiv.org/abs/2106.12423) | Jun-2021 |
-| SwinStyle | [StyleSwin: Transformer-based GAN for High-resolution Image Generation](https://arxiv.org/abs/2112.10762) | Dec-2021 |
+| Model         | Paper                                                                                                                                      | Published   |
+|:--------------|:-------------------------------------------------------------------------------------------------------------------------------------------|:------------|
+| SwinStyle     | [StyleSwin: Transformer-based GAN for High-resolution Image Generation](https://arxiv.org/abs/2112.10762)                                  | Dec-2021    |
+| StyleGAN3     | [Alias-Free Generative Adversarial Networks](https://arxiv.org/abs/2106.12423)                                                             | Jun-2021    |
+| Improved-DDPM | [Improved Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2102.09672)                                                      | Feb-2021    |
+| LOGAN         | [LOGAN: Latent Optimisation for Generative Adversarial Networks](https://arxiv.org/abs/1912.00953)                                         | Dec-2019    |
+| StyleGAN2     | [Analyzing and Improving the Image Quality of StyleGAN](https://arxiv.org/abs/1912.04958)                                                  | Dec-2019    |
+| StyleGAN      | [A Style-Based Generator Architecture for Generative Adversarial Networks](https://arxiv.org/abs/1812.04948)                               | Dec-2018    |
+| ProGAN        | [Progressive Growing of GANs for Improved Quality, Stability, and Variation](https://arxiv.org/abs/1710.10196)                             | Oct-2017    |
+| GGAN          | [Geometric GAN](https://arxiv.org/abs/1705.02894)                                                                                          | May-2017    |
+| WGAN          | [Wasserstein GAN](https://arxiv.org/abs/1701.07875v3)                                                                                      | Jan-2017    |
+| LSGAN         | [Least Squares Generative Adversarial Networks](https://arxiv.org/abs/1611.04076)                                                          | Nov-2016    |
+| BiGAN         | [Adversarial Feature Learning](https://arxiv.org/abs/1605.09782v7)                                                                         | May-2016    |
+| InfoGAN       | [InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets](https://arxiv.org/abs/1606.03657v1) | Jan-2016    |
+| VAE-GAN       | [Autoencoding beyond pixels using a learned similarity metric](https://arxiv.org/abs/1512.09300)                                           | Dec-2015    |
+| DCGAN         | [Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks](https://arxiv.org/abs/1511.06434)           | Nov-2015    |
+| GAN           | [Generative Adversarial Networks](https://arxiv.org/abs/1406.2661)                                                                         | Jun-2014    |
 
 #### Class-Conditioned
 
@@ -585,12 +586,12 @@ Papers:
 
 ##### Models
 
-| Model | Paper | Published |
-|-------|-------|-----------|
-| CGAN | [Conditional Generative Adversarial Nets](https://arxiv.org/abs/1411.1784) | Nov-2014 |
-| SNGAN | [Spectral Normalization for Generative Adversarial Networks](https://arxiv.org/abs/1802.05957) | Feb-2018 |
-| SAGAN | [Self-Attention Generative Adversarial Networks](https://arxiv.org/abs/1805.08318) | May-2018 |
-| BigGAN | [Large Scale Adversarial Representation Learning](https://arxiv.org/abs/1907.02544v2) | Jul-2019 |
+| Model   | Paper                                                                                          | Published   |
+|:--------|:-----------------------------------------------------------------------------------------------|:------------|
+| BigGAN  | [Large Scale Adversarial Representation Learning](https://arxiv.org/abs/1907.02544v2)          | Jul-2019    |
+| SAGAN   | [Self-Attention Generative Adversarial Networks](https://arxiv.org/abs/1805.08318)             | May-2018    |
+| SNGAN   | [Spectral Normalization for Generative Adversarial Networks](https://arxiv.org/abs/1802.05957) | Feb-2018    |
+| CGAN    | [Conditional Generative Adversarial Nets](https://arxiv.org/abs/1411.1784)                     | Nov-2014    |
 
 #### Image to Image Translation
 
@@ -598,25 +599,25 @@ Papers:
 
 ##### Models
 
-| Model | Paper | Published |
-|-------|-------|-----------|
-| CoGAN | [Coupled Generative Adversarial Networks](https://arxiv.org/abs/1606.07536) | Jun-2016 |
-| Pix2Pix | [Image-to-Image Translation with Conditional Adversarial Networks](https://arxiv.org/abs/1611.07004) | Nov-2016 |
-| CycleGAN | [Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks](https://arxiv.org/abs/1703.10593) | Mar-2017 |
-| CC-FPSE-AUG | [Improving Augmentation and Evaluation Schemes for Semantic Image Synthesis](https://arxiv.org/abs/2011.12636) | Nov-2020 |
-| DAFormer | [DAFormer: Improving Network Architectures and Training Strategies for Domain-Adaptive Semantic Segmentation](https://arxiv.org/abs/2111.14887) | Nov-2021 |
+| Model       | Paper                                                                                                                                           | Published   |
+|:------------|:------------------------------------------------------------------------------------------------------------------------------------------------|:------------|
+| DAFormer    | [DAFormer: Improving Network Architectures and Training Strategies for Domain-Adaptive Semantic Segmentation](https://arxiv.org/abs/2111.14887) | Nov-2021    |
+| CC-FPSE-AUG | [Improving Augmentation and Evaluation Schemes for Semantic Image Synthesis](https://arxiv.org/abs/2011.12636)                                  | Nov-2020    |
+| CycleGAN    | [Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks](https://arxiv.org/abs/1703.10593)                             | Mar-2017    |
+| Pix2Pix     | [Image-to-Image Translation with Conditional Adversarial Networks](https://arxiv.org/abs/1611.07004)                                            | Nov-2016    |
+| CoGAN       | [Coupled Generative Adversarial Networks](https://arxiv.org/abs/1606.07536)                                                                     | Jun-2016    |
 
 #### Neural Style-Transfer
 
 ##### Models
 
-| Paper | Published |
-|-------|-----------|
-| [A Neural Algorithm of Artistic Style](https://arxiv.org/abs/1508.06576) | Aug-2015 |
-| [Instance Normalization: The Missing Ingredient for Fast Stylization](https://arxiv.org/abs/1607.08022v3) | Jul-2016 |
-| [Precomputed Real-Time Texture Synthesis with Markovian Generative Adversarial Networks](https://arxiv.org/abs/1604.04382) | Apr-2016 |
-| [Universal Style Transfer via Feature Transforms](https://arxiv.org/abs/1705.08086) | May-2017 |
-| [A Closed-form Solution to Photorealistic Image Stylization](https://arxiv.org/abs/1802.06474v5) | Feb-2018 |
+| Paper                                                                                                                      | Published   |
+|:---------------------------------------------------------------------------------------------------------------------------|:------------|
+| [A Closed-form Solution to Photorealistic Image Stylization](https://arxiv.org/abs/1802.06474v5)                           | Feb-2018    |
+| [Universal Style Transfer via Feature Transforms](https://arxiv.org/abs/1705.08086)                                        | May-2017    |
+| [Instance Normalization: The Missing Ingredient for Fast Stylization](https://arxiv.org/abs/1607.08022v3)                  | Jul-2016    |
+| [Precomputed Real-Time Texture Synthesis with Markovian Generative Adversarial Networks](https://arxiv.org/abs/1604.04382) | Apr-2016    |
+| [A Neural Algorithm of Artistic Style](https://arxiv.org/abs/1508.06576)                                                   | Aug-2015    |
 
 #### Pretrained Models
 
@@ -633,16 +634,16 @@ Papers:
 
 ##### Models
 
-| Model | Paper | Published |
-|-------|-------|-----------|
-| SR-CNN | [Image Super-Resolution Using Deep Convolutional Networks](https://arxiv.org/abs/1501.00092) | Dec-2014 |
-| SRGan | [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network](https://arxiv.org/abs/1609.04802) | Sep-2016 |
-| EDSR | [Enhanced Deep Residual Networks for Single Image Super-Resolution](https://arxiv.org/abs/1707.02921) | Jul-2017 |
-| ESRGAN | [ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks](https://arxiv.org/abs/1809.00219) | Sep-2018 |
-| HAN | [Single Image Super-Resolution via a Holistic Attention Network](https://arxiv.org/abs/2008.08767v1) | Aug-2020 |
-| GLEAN | [GLEAN: Generative Latent Bank for Large-Factor Image Super-Resolution](https://arxiv.org/abs/2012.00739) | Dec-2020 |
-| SwinIR | [SwinIR: Image Restoration Using Swin Transformer](https://arxiv.org/abs/2108.10257v1) | Aug-2021 |
-| BRGM | [Bayesian Image Reconstruction using Deep Generative Models](https://arxiv.org/abs/2012.04567v5) | Dec-2020 |
+| Model   | Paper                                                                                                                    | Published   |
+|:--------|:-------------------------------------------------------------------------------------------------------------------------|:------------|
+| SwinIR  | [SwinIR: Image Restoration Using Swin Transformer](https://arxiv.org/abs/2108.10257v1)                                   | Aug-2021    |
+| GLEAN   | [GLEAN: Generative Latent Bank for Large-Factor Image Super-Resolution](https://arxiv.org/abs/2012.00739)                | Dec-2020    |
+| BRGM    | [Bayesian Image Reconstruction using Deep Generative Models](https://arxiv.org/abs/2012.04567v5)                         | Dec-2020    |
+| HAN     | [Single Image Super-Resolution via a Holistic Attention Network](https://arxiv.org/abs/2008.08767v1)                     | Aug-2020    |
+| ESRGAN  | [ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks](https://arxiv.org/abs/1809.00219)                    | Sep-2018    |
+| EDSR    | [Enhanced Deep Residual Networks for Single Image Super-Resolution](https://arxiv.org/abs/1707.02921)                    | Jul-2017    |
+| SRGan   | [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network](https://arxiv.org/abs/1609.04802) | Sep-2016    |
+| SR-CNN  | [Image Super-Resolution Using Deep Convolutional Networks](https://arxiv.org/abs/1501.00092)                             | Dec-2014    |
 
 #### Inpainting
 
@@ -650,13 +651,13 @@ Papers:
 
 ##### Models
 
-| Model | Paper | Published |
-|-------|-------|-----------|
-| BRGM | [Bayesian Image Reconstruction using Deep Generative Models](https://arxiv.org/abs/2012.04567v5) | Dec-2021 |
-| DeepFillV1 | [Generative Image Inpainting with Contextual Attention](https://arxiv.org/abs/1801.07892) | Jan-2018 |
-| DeepFillV2 | [https://arxiv.org/abs/1806.03589](https://arxiv.org/abs/1806.03589) | Jun-2018 |
-| SRNet | [Editing Text in the Wild](https://arxiv.org/abs/1908.03047v1) | Aug-2019 |
-| GIP | [Image Completion and Extrapolation with Contextual Cycle Consistency](https://arxiv.org/abs/2006.02620) | Jun-2020 | 
+| Model      | Paper                                                                                                    | Published   |
+|:-----------|:---------------------------------------------------------------------------------------------------------|:------------|
+| BRGM       | [Bayesian Image Reconstruction using Deep Generative Models](https://arxiv.org/abs/2012.04567v5)         | Dec-2021    |
+| GIP        | [Image Completion and Extrapolation with Contextual Cycle Consistency](https://arxiv.org/abs/2006.02620) | Jun-2020    |
+| SRNet      | [Editing Text in the Wild](https://arxiv.org/abs/1908.03047v1)                                           | Aug-2019    |
+| DeepFillV2 | [https://arxiv.org/abs/1806.03589](https://arxiv.org/abs/1806.03589)                                     | Jun-2018    |
+| DeepFillV1 | [Generative Image Inpainting with Contextual Attention](https://arxiv.org/abs/1801.07892)                | Jan-2018    | 
 
 ### Pretrained Models
 
