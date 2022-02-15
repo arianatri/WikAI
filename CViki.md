@@ -268,7 +268,7 @@ Image classification refers to the task of extracting information classes from a
 | <a name="InceptionV3">InceptionV3</a>   | [Rethinking the Inception Architecture for Computer Vision](https://arxiv.org/abs/1512.00567)                          | Dec-2015    |
 | <a name="GoogleLeNet">GoogLeNet</a>     | [Going Deeper with Convolutions](arxiv.org/abs/1409.4842)                                                              | Sep-2014    |
 | <a name="VGG">VGG</a>                   | [Very Deep Convolutional Networks for Large-Scale Image Recognition](https://arxiv.org/abs/1409.1556)                  | Sep-2014    |
-| <a name="AlexNet">AlexNet</a>           | [One weird trick for parallelizing convolutional neural networks](https://arxiv.org/abs/1404.5997)                     | Apr-2014    |
+| <a name="AlexNet">AlexNet</a>           | [ImageNet Classification with Deep Convolutional Neural Networks](https://papers.nips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html)                     | Sep-2012    |
 
 #### Common Metrics
 
