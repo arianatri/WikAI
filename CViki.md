@@ -309,13 +309,15 @@ Image classification refers to the task of extracting information classes from a
 | [InceptionV3](#InceptionV3)   | Inception-V3       | 2015     | 27         | 77.294     |
 | [Darknet](#Darknet)           | Darknet-53         | 2016     | ?          | 77.2       |
 | [DenseNet](#DenseNet)         | DenseNet-201       | 2016     | 20         | 76.896     |
+| [MNASNet](#MNASNet)           | MNASNet A-3        | 2018     | 5          | 76.7       |
 | [ResNet](#ResNet)             | ResNet-50          | 2015     | 26         | 76.13      |
 | [DenseNet](#DenseNet)         | DenseNet-126       | 2016     | 29         | 75.6       |
 | [DenseNet](#DenseNet)         | DenseNet-169       | 2016     | 14         | 75.6       |
+| [MNASNet](#MNASNet)           | MNASNet A-2        | 2018     | 5          | 75.6       |
+| [MNASNet](#MNASNet)           | MNASNet A-1        | 2018     | 4          | 75.2       |
 | [DenseNet](#DenseNet)         | DenseNet-121       | 2016     | 8          | 74.434     |
 | [VGG](#VGG)                   | VGG-19 (BN)        | 2014     | 144        | 74.218     |
 | [MobileNet](#MobileNet)       | MobileNet-v3-large | 2018     | 5          | 74.042     |
-| [MNASNet](#MNASNet)           | MNASNet 1-0        | 2018     | 4          | 73.456     |
 | [VGG](#VGG)                   | VGG-16 (BN)        | 2014     | 138        | 73.36      |
 | [ResNet](#ResNet)             | ResNet-34          | 2015     | 22         | 73.314     |
 | [DarknetV1](#DarknetV1)       | Darknet-19         | 2016     | ?          | 72.9       |
@@ -329,8 +331,6 @@ Image classification refers to the task of extracting information classes from a
 | [SqueezeNet](#SqueezeNet)     | SqueezeNet 1.1     | 2016     | 1          | 58.178     |
 | [SqueezeNet](#SqueezeNet)     | SqueezeNet 1.0     | 2016     | 1          | 58.092     |
 | [AlexNet](#AlexNet)           | AlexNet            | 2014     | 61         | 56.522     |
-| [MNASNet](#MNASNet)           | MNASNet 0-75       | 2018     | 3          |            |
-| [MNASNet](#MNASNet)           | MNASNet 1-3        | 2018     | 6          |            |
 
 * Acc@1: Accuracy@1 on ImageNet at 224x224 resolution
 
