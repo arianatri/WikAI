@@ -455,6 +455,21 @@ Image classification refers to the task of extracting information classes from a
 
 <img src="https://miro.medium.com/max/1000/1*NLnnf_M4Nlm4p1GAWrWUCQ.gif" width="50%">
 
+#### Key concepts
+
+- Bounding box: Rectangular region that contains an object.
+- [IoU](https://www.pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/): Intersection area over area union of two bounding boxes
+- Feature map: The activation maps, called feature maps, capture the result of applying the filters to input image
+- Backbone: CNN that produces the Feature map
+- [ROI](https://en.wikipedia.org/wiki/Region_of_interest): Region of interest
+- Region proposals: Regions with potential objects
+- RPN (Region Proposals Networks): A CNN that predict region proposals
+- [Non maximum supression](https://towardsdatascience.com/non-maximum-suppression-nms-93ce178e177c): Method to filter similar bounding boxes using scores
+- [Anchor boxes](https://towardsdatascience.com/anchor-boxes-the-key-to-quality-object-detection-ddf9d612d4f9): Set of predefined bounding boxes of a certain height and width to use as a base for bounding box regression.
+- [ROI pooling](https://towardsdatascience.com/region-of-interest-pooling-f7c637f409af): Convert region proposals to a fixed size
+- [ROI align/wrap](https://towardsdatascience.com/understanding-region-of-interest-part-2-roi-align-and-roi-warp-f795196fc193): Alternative methods for ROI pooling
+- [FPN (Feature Pyramid Network)](https://jonathan-hui.medium.com/understanding-feature-pyramid-networks-for-object-detection-fpn-45b227b9106c):  Instead of using a single feature map for object detection, use multiple feature map layers at different scales for more robust detection.
+
 #### Models
 
 | Model                                    | Paper                                                                                                               | ↓ Published |
@@ -473,7 +488,6 @@ Image classification refers to the task of extracting information classes from a
 
 #### Common Metrics
 <a name="obj-detection-metrics"></a>
-* **_IoU_**: Bounding box intersection over union of prediction and ground truth
 * <img src="https://latex.codecogs.com/svg.latex?\inline&space;AP%5E%7Bclass%7D_%7B%40k%7D" />: Average Precision at IoU threhsold k
 * <img src="https://latex.codecogs.com/svg.latex?\inline&space;mAP_%7B%40k%7D" />: Mean of <img src="https://latex.codecogs.com/svg.latex?\inline&space;AP%5E%7Bclass%7D_%7B%40k%7D" /> across all **_K_** classes
 * **_AP_**: Mean of <img src="https://latex.codecogs.com/svg.latex?\inline&space;mAP_%7B%40k%7D" /> across different **_k_** IoU thresholds
