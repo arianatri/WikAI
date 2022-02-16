@@ -24,6 +24,13 @@
   * [Image formats](#Image-formats)
   * [Color spaces](#Color-spaces)
   * [Image operations](#Image-operations)
+    + [Basic operations](#Basic-operations)
+    + [Image arithmetic operation](#Image-arithmetic-operation)
+    + [Geometric Operations](#Geometric-Operations)
+    + [Thresholding](#Thresholding)
+    + [Smoothing](#Smoothing)
+    + [Edge detection](#Edge-detection)
+    + [Morphology](#Morphology)
 - [Tasks](#Tasks)
   * [:camera: Image classification](#camera-image-classification)
   * [:mag: Object detection](#mag-object-detection)
@@ -284,35 +291,69 @@
 
 ### Image operations
 
-| Type      | Name                     | Description | Parameters  |
-|-----------|--------------------------|-------------|-------------|
-| Basic     | Cropping                 | Crop a region of interest from an image | Crop location (x1,y1), (x2,y2) in some image coordinates |
-| Basic     | Padding                  | Create a border around an image | pl=Left amount, pr=Right amount, pt=Top amount, pb=Bottom ammount |
-| Arithmetic| Image airthmetic         | Merge two images by using operations like addition, substraction, multiplication |  |
-| Arithmetic | Image Bitwise operations | Binary operations to work with masks like AND (mask intersection), OR (mask adition), XOR (union-intersection) | |
-| Arithmetic | Image blending           | Merge two images using a threshold | alpha=threshold |
-| Color      | Changing colorspaces     | Convert an image from one colorspace to another colorspace (e.g. RGB->HSL) | Source and target colorspace |
-| Geometric | Resize                   | Scale (shrink or growing) the resolution of an image by applying some interpolation method | w=Scaling in width, h=scaling in height | 
-| Geometric | Translate                | Shifting of an object's location while mainting the image dimension | x=Shift in left-right direction, y=shift in top-bottom direction |
-| Geometric | Rotation                 | Rotation of an image for an angle |  θ rotation angle usually in degrees | 
-| Geometric | Affine Transformation    | A more generic linear transformation such that all parallel lines in the original image will still be parallel in the output image | Transformation matrix |
-| Geometric | Perspective wrap         | Change the perspective of an image | 4 2-d coords from the source location and 4 2-d coords correspoinding to the target location |
-| Thresholding | Simple thresholding  | Select pixel with values larger than threhsold | L=lower threshold, U=upper threshold |
-| Thresholding | Otsu's thresholding | Otsu's method determines an optimal global threshold value from the image histogram. | |
-| Smoothing | Box blur | Takes the average of all the pixels under the kernel area and replaces the central element | Kernel size (blur amount) |
-| Smoothing | Gaussian blur | Bluring using a guassian kernel | Kernel size |
-| Smoothing | Median bluring | Replace the pixel with the median of all the pixels under the kernel area per channel | Kernel size |
-| Smoothing | Bilateral Filtering | Like gaussina blur but keeping edges sharp | Kernel size |
-| Edge detection | Sobel  | Detect borders in one direction using a joint Gausssian smoothing plus differentiation operation | Kernel size, direction |
-| Edge detection | Laplacian | Detect borders by calculating the Laplacian of the image | |
-| Edge detection | Canny | Edge Detection robust under noise developed by John F. Canny | |
-| Morphology | Erosion |  Shrinks the boundary of the foreground object | Kernel size |
-| Morphology | Dilation | Grows the boundary of the foreground object. Oposite of erotion | Kernel size |
-| Morphology | Opening | Erosion followed by dilation (usually to remove noise in the background object) | Kernel size |
-| Morphology | Closing | Dilation followed by erosion  (usually to fill small holes in the foreground object) | Kernel size |
-| Morphology | Morphological Gradient | Difference between dilation and erosion (usually to outline the foreground) | Kernel size |
-| Morphology | Top hat | Difference between the opening of the input image and input image | Kernel size |
-| Morphology | Black hat | Difference between the closing of the input image and input image | Kernel size |
+#### Basic operations
+
+| Name                 | Description | Parameters  |
+|----------------------|-------------|-------------|
+| Cropping             | Crop a region of interest from an image | Crop location (x1,y1), (x2,y2) in some image coordinates |
+| Padding              | Create a border around an image | pl=Left amount, pr=Right amount, pt=Top amount, pb=Bottom ammount |
+| Horizontal Flip      | Flips the image horizontally |
+| Vertical Flip        | Flips the image vertically |
+| Changing colorspaces | Convert an image from one colorspace to another colorspace (e.g. RGB->HSL) | Source and target colorspace |
+
+#### Image arithmetic operation
+
+| Name                     | Description | Parameters  |
+|--------------------------|-------------|-------------|
+| Image airthmetic         | Merge two images by using operations like addition, substraction, multiplication |  |
+| Image Bitwise operations | Binary operations to work with masks like AND (mask intersection), OR (mask adition), XOR (union-intersection) | |
+| Image blending           | Merge two images using a threshold | alpha=threshold |
+
+#### Geometric Operations
+
+| Name                  | Description | Parameters  |
+|-----------------------|-------------|-------------|
+| Resize                | Scale (shrink or growing) the resolution of an image by applying some interpolation method | w=Scaling in width, h=scaling in height | 
+| Translate             | Shifting of an object's location while mainting the image dimension | x=Shift in left-right direction, y=shift in top-bottom direction |
+| Rotation              | Rotation of an image by an angle |  θ rotation angle usually in degrees | 
+| Affine Transformation | A more generic linear transformation such that all parallel lines in the original image will still be parallel in the output image | Transformation matrix |
+| Perspective wrap      | Change the perspective of an image | 4 2-d coords from the source location and 4 2-d coords correspoinding to the target location |
+
+#### Thresholding
+
+| Name                 | Description | Parameters  |
+|----------------------|-------------|-------------|
+| Simple thresholding  | Select pixel with values larger than threhsold | L=lower threshold, U=upper threshold |
+| Otsu's thresholding  | Otsu's method determines an optimal global threshold value from the image histogram. | |
+
+#### Smoothing
+
+| Name                | Description |
+|---------------------|-------------|
+| Box blur            | Takes the average of all the pixels under the kernel area and replaces the central element |
+| Gaussian blur       | Bluring using a guassian kernel |
+| Median bluring      | Replace the pixel with the median of all the pixels under the kernel area per channel |
+| Bilateral Filtering | Like gaussian blur but keeping edges sharp |
+
+#### Edge detection
+
+| Name      | Description | Parameters  |
+|-----------|-------------|-------------|
+| Sobel     | Detect borders in one direction using a joint Gausssian smoothing plus differentiation operation | Kernel size, direction |
+| Laplacian | Detect borders by calculating the Laplacian of the image | |
+| Canny     | Edge Detection robust under noise developed by John F. Canny | |
+
+#### Morphology
+
+| Name                   | Description |
+|------------------------|-------------|
+| Erosion                |  Shrinks the boundary of the foreground object |
+| Dilation               | Grows the boundary of the foreground object. Oposite of erotion |
+| Opening                | Erosion followed by dilation (usually to remove noise in the background object) |
+| Closing                | Dilation followed by erosion  (usually to fill small holes in the foreground object) |
+| Morphological Gradient | Difference between dilation and erosion (usually to outline the foreground) |
+| Top hat                | Difference between the opening of the input image and input image |
+| Black hat              | Difference between the closing of the input image and input image |
 
 ## Tasks
 
