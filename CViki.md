@@ -20,17 +20,6 @@
     + [<img src="https://mediapipe.dev/assets/img/favicon.svg" width="32">MediaPipe](#-MediaPipe)
     + [<img src="https://production-media.paperswithcode.com/libraries/dete.png" width="32">Detectron2](#-Detectron2)
     + [<img src="https://oss.openmmlab.com/www/community/openmmlab.png" width=32/>MMCV](#-MMCV)
-- [Image processing](#Image-processing)
-  * [Image formats](#Image-formats)
-  * [Color spaces](#Color-spaces)
-  * [Image operations](#Image-operations)
-    + [Basic operations](#Basic-operations)
-    + [Image arithmetic operation](#Image-arithmetic-operation)
-    + [Geometric Operations](#Geometric-Operations)
-    + [Thresholding](#Thresholding)
-    + [Smoothing](#Smoothing)
-    + [Edge detection](#Edge-detection)
-    + [Morphology](#Morphology)
 - [Tasks](#Tasks)
   * [:camera: Image classification](#camera-image-classification)
   * [:mag: Object detection](#mag-object-detection)
@@ -63,14 +52,6 @@
 
 
 ## Frameworks
-
-### Image processing libraries
-
-| Framework                                                    | Image | Video | C/C++ | Python |
-| ------------------------------------------------------------ | ----- | ----- | ----- | ------ |
-| [<img src="https://opencv.org/wp-content/uploads/2020/07/cropped-Fav-32x32.png" width=32/>OpenCV](https://opencv.org/) | :heavy_check_mark:     | :heavy_check_mark:     | :heavy_check_mark:     | :heavy_check_mark:      |
-| [<img src="https://pillow.readthedocs.io/en/stable/_static/favicon.ico" width=32 />Pillow](https://pillow.readthedocs.io/en/stable/) | :heavy_check_mark:     |       | :heavy_check_mark:     |        |
-| [<img src="https://scikit-image.org/_static/favicon.ico" width=32/>Scikit-image](https://scikit-image.org/) | :heavy_check_mark:     |       | :heavy_check_mark:     |        |
 
 ### Image Augmentation
 
@@ -252,108 +233,7 @@
     - [Pose detection (MMPose)](https://mmpose.readthedocs.io/en/latest/)
     - [Action detection (MMAction2)](https://mmaction2.readthedocs.io/en/latest/)
 
-## Image processing
 
-### Image formats
-
-#### Raster Image formats
-
-| Format | Name                             | Extension    | Alpha              | Lossy             |  Bits per channel | Compression                |
-|--------|----------------------------------|--------------|--------------------|-------------------|-------------------|----------------------------|
-| BMP    | Windows Bitmap                   | .bmp         |                    | :heavy_check_mark:| 8                 | RLE                        |
-| JPG    | Joint Photographic Experts Group | .jpeg, .jpg  |                    | :heavy_check_mark:| 8                 | DCT                        |
-| GIF    | GIF                              | .gif         | :heavy_check_mark: | :heavy_check_mark:| 8 (indexed)       |                            | 
-| PNG    | Portable Network Graphics        | .png         | :heavy_check_mark: |                   | 1,2,4,8,16 (GRAY), 8, 16 (RGB)   | DEFLATE     |
-| TIFF   | Tagged Image File Format         | .tiff        | :heavy_check_mark: |                   | 8, 16             | PackBits, LZW, DCT, Huffman|
-
-##### Vector Image formats
-
-| Format | Name                             |  Extension   |
-|--------|----------------------------------|--------------|
-| SVG    | Scalable Vector Graphics         | .svg, .svgz  |
-| EPS    | Encapsulated PostScript          | .eps         |
-
-#### Resources
-
-1. [Full list of file formats](https://en.wikipedia.org/wiki/List_of_file_formats#Graphics)
-
-### Color spaces
-
-| Name  | Channels                                  |
-|-------|-------------------------------------------|
-| RGB   | R=Red, G=Green, B=Blue                    |
-| RGBA  | R=Red, G=Green, B=Blue, A=Alpha           |
-| CMYK  | C=Cyan, M=Magenta, Y=Yellow, K=Black      |
-| HSL   | H=Hue, S=Saturation, L=Luminance          |
-| HSV   | H=Hue, S=Saturation, V=Value              |
-| YUV   | Y=Yellow, U, V                            |
-| Lab   | L=Luminance, a=Red-Green, b=Yellow-Blue   |
-
-### Image operations
-
-#### Basic operations
-
-| Name                 | Description | Parameters  |
-|----------------------|-------------|-------------|
-| Cropping             | Crop a region of interest from an image | Crop location (x1,y1), (x2,y2) in some image coordinates |
-| Padding              | Create a border around an image | pl=Left amount, pr=Right amount, pt=Top amount, pb=Bottom ammount |
-| Horizontal Flip      | Flips the image horizontally |
-| Vertical Flip        | Flips the image vertically |
-| Changing colorspaces | Convert an image from one colorspace to another colorspace (e.g. RGB->HSL) | Source and target colorspace |
-
-#### Image arithmetic operation
-
-| Name                     | Description | Parameters  |
-|--------------------------|-------------|-------------|
-| Image airthmetic         | Merge two images by using operations like addition, substraction, multiplication |  |
-| Image Bitwise operations | Binary operations to work with masks like AND (mask intersection), OR (mask adition), XOR (union-intersection) | |
-| Image blending           | Merge two images using a threshold | alpha=threshold |
-
-#### Geometric Operations
-
-| Name                  | Description | Parameters  |
-|-----------------------|-------------|-------------|
-| Resize                | Scale (shrink or growing) the resolution of an image by applying some interpolation method | w=Scaling in width, h=scaling in height | 
-| Translate             | Shifting of an object's location while mainting the image dimension | x=Shift in left-right direction, y=shift in top-bottom direction |
-| Rotation              | Rotation of an image by an angle |  θ rotation angle usually in degrees | 
-| Affine Transformation | A more generic linear transformation such that all parallel lines in the original image will still be parallel in the output image | Transformation matrix |
-| Perspective wrap      | Change the perspective of an image | 4 2-d coords from the source location and 4 2-d coords correspoinding to the target location |
-
-#### Thresholding
-
-| Name                 | Description | Parameters  |
-|----------------------|-------------|-------------|
-| Simple thresholding  | Select pixel with values larger than threhsold | L=lower threshold, U=upper threshold |
-| Otsu's thresholding  | Otsu's method determines an optimal global threshold value from the image histogram. | |
-
-#### Smoothing
-
-| Name                | Description |
-|---------------------|-------------|
-| Box blur            | Takes the average of all the pixels under the kernel area and replaces the central element |
-| Gaussian blur       | Bluring using a guassian kernel |
-| Median bluring      | Replace the pixel with the median of all the pixels under the kernel area per channel |
-| Bilateral Filtering | Like gaussian blur but keeping edges sharp |
-
-#### Edge detection
-
-| Name      | Description | Parameters  |
-|-----------|-------------|-------------|
-| Sobel     | Detect borders in one direction using a joint Gausssian smoothing plus differentiation operation | Kernel size, direction |
-| Laplacian | Detect borders by calculating the Laplacian of the image | |
-| Canny     | Edge Detection robust under noise developed by John F. Canny | |
-
-#### Morphology
-
-| Name                   | Description |
-|------------------------|-------------|
-| Erosion                |  Shrinks the boundary of the foreground object |
-| Dilation               | Grows the boundary of the foreground object. Oposite of erotion |
-| Opening                | Erosion followed by dilation (usually to remove noise in the background object) |
-| Closing                | Dilation followed by erosion  (usually to fill small holes in the foreground object) |
-| Morphological Gradient | Difference between dilation and erosion (usually to outline the foreground) |
-| Top hat                | Difference between the opening of the input image and input image |
-| Black hat              | Difference between the closing of the input image and input image |
 
 ## Tasks
 

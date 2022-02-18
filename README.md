@@ -1,5 +1,7 @@
 # WikAI
 
-A generic Wiki for artificial intelligence
+A Wiki for artificial intelligence
 
-- [Computer vision Wiki](CViki.md)
+- **Computer Vision**
+    * [Image processing reference](ImageProcessing.md)
+    * [Computer Vision Wiki](CViki.md)
