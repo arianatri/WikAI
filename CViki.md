@@ -4,17 +4,9 @@
 ## Table of Contents
 
 - [Frameworks](#Frameworks)
-  * [Image processing libraries](#Image-processing-libraries)
   * [Image Augmentation](#Image-Augmentation)
-  * [Low-level Deep Learning Frameworks](#Low-level-Deep-Learning-Frameworks)
-    + [<img src="https://pytorch.org/favicon.ico" width="32" />PyTorch](#-Pytorch)
-    + [<img src="https://www.tensorflow.org/favicon.ico" width="32" />TensorFlow](#-TensorFlow)
-    + [<img src="https://caffe.berkeleyvision.org/images/caffeine-icon.png" width="32"/>Caffe](#-Caffe)
-    + [<img src="https://pjreddie.com/static/icon.png" width="32"/>Darknet](#-Darknet)
-    + [<img src="https://raw.githubusercontent.com/dmlc/web-data/master/mxnet/image/mxnet-icon.png" width="32"/>MXNet](#-MXNet)
-  * [High-level frameworks](#High-level-frameworks)
+  * [Computer Vision frameworks](#Computer-Vision-frameworks)
     + [<img src="https://pytorch.org/favicon.ico" width="32" />Torchvision](#-Torchvision)
-    + [<img src="https://assets.website-files.com/5f76c986da6f6011315a6c45/5f7b485594e5335f56984a3c_Lightning_FavIcon.png" width="32">PyTorch Lightning](#-PyTorch-Lightning)
     + [<img src="https://keras.io/favicon.ico" width="32">Keras](#-Keras)
     + [<img src="https://cv.gluon.ai/_static/assets/img/gluon_white.png" width="32"/>GluonCV](#-GluonCV)
     + [<img src="https://mediapipe.dev/assets/img/favicon.svg" width="32">MediaPipe](#-MediaPipe)
@@ -47,7 +39,6 @@
 - [Annotation Tools](#Annotation-tools)
 - [Material](#Material)
   * [Books](#Books)
-  * [Papers](#Papers)
   * [Blogs](#Blogs)
 
 
@@ -61,85 +52,11 @@
 | [imgaug](https://imgaug.readthedocs.io/en/latest/index.html) | :heavy_check_mark:                | :heavy_check_mark:         | :heavy_check_mark:              | :heavy_check_mark:            |
 | [albumentations](https://albumentations.ai/docs/)            | :heavy_check_mark:                | :heavy_check_mark:         | :heavy_check_mark:              | :heavy_check_mark:            |
 
-### Low-level Deep Learning Frameworks
-
-| Framework                                                    | Creator       | Python | C/C++ | R    | Java | Javascript |
-| ------------------------------------------------------------ | ------------- | ------ | ----- | ---- | ---- | ---------- |
-| [<img src="https://pytorch.org/favicon.ico" width="32" />PyTorch](#-Pytorch) | Facebook      | :heavy_check_mark:      | :heavy_check_mark:     |      |      |            |
-| [<img src="https://www.tensorflow.org/favicon.ico" width="32" />Tensorflow](#-TensorFlow) | Google        | :heavy_check_mark:      | :heavy_check_mark:     |      | :heavy_check_mark:    | :heavy_check_mark:          |
-| [<img src="https://caffe.berkeleyvision.org/images/caffeine-icon.png" width="32"/>Caffe](#-Caffe) | UC Berkeley   | :heavy_check_mark:      | :heavy_check_mark:     |      |      |            |
-| [<img src="https://pjreddie.com/static/icon.png" width="32"/>Darknet](#-Darknet) | Joseph Redmon |        | :heavy_check_mark:     |      |      |            |
-| [<img src="https://raw.githubusercontent.com/dmlc/web-data/master/mxnet/image/mxnet-icon.png" width="32"/>MXNet](#-MXNet) | Apache        | :heavy_check_mark:      | :heavy_check_mark:     | :heavy_check_mark:    | :heavy_check_mark:    |            |
-
-
-#### <img src="https://pytorch.org/favicon.ico" width="32" /> Pytorch
-
-> PyTorch is a Python package that provides
-    * Tensor computation (like NumPy) with strong GPU acceleration
-    * Deep neural networks built on a tape-based autograd system
-
-* :house: **Main page**: https://pytorch.org/
-* ![GitHub icon](https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg) **GitHub**: https://github.com/pytorch/pytorch ![GitHub stars](https://img.shields.io/github/stars/pytorch/pytorch?style=social)
-* <img src="https://pypi.org/static/images/logo-small.95de8436.svg" width=32 />**PyPI**:  https://pypi.org/project/torch ![PyPi version](https://badgen.net/pypi/v/torch/)]
-* :blue_book: **Docs**: https://pytorch.org/docs/stable/index.html
-*  **Docker**:
-    * [DockerHub](https://hub.docker.com/r/pytorch/pytorch) ![docker pulls](https://img.shields.io/docker/pulls/pytorch/pytorch.svg?style=social)
-    * [Nvidia NGC](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch)
-
-#### <img src="https://www.tensorflow.org/favicon.ico" width="32" /> TensorFlow 
-
-> TensorFlow is an end-to-end open source platform for machine learning. It has a comprehensive, flexible ecosystem of tools, libraries and community resources that lets researchers push the state-of-the-art in ML and developers easily build and deploy ML powered applications.
-
-* :house: **Main page**: https://www.tensorflow.org/?hl=es-419
-* ![GitHub icon](https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg) **GitHub**: https://github.com/tensorflow/tensorflow  ![GitHub stars](https://img.shields.io/github/stars/tensorflow/tensorflow?style=social)
-* <img src="https://pypi.org/static/images/logo-small.95de8436.svg" width=32 />**PyPI**:  https://pypi.org/project/tensorflow [![PyPi version](https://badgen.net/pypi/v/tensorflow/)](https://pypi.org/project/tensorflow)
-* :blue_book: **Docs**: https://www.tensorflow.org/api_docs
-* **Docker**:
-    * [DockerHub](https://hub.docker.com/r/tensorflow/tensorflow) ![docker pulls](https://img.shields.io/docker/pulls/tensorflow/tensorflow.svg?style=social)
-    * [Nvidia NGC](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/tensorflow)
-    
-#### <img src="https://caffe.berkeleyvision.org/images/caffeine-icon.png" width="32"/> Caffe
-
-> Caffe is a deep learning framework made with expression, speed, and modularity in mind. It is developed by Berkeley AI Research (BAIR) and by community contributors. Yangqing Jia created the project during his PhD at UC Berkeley. Caffe is released under the BSD 2-Clause license.
-
-* :house: **Main page**: https://caffe.berkeleyvision.org/
-* ![GitHub icon](https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg) **GitHub**: https://github.com/BVLC/caffe ![GitHub stars](https://img.shields.io/github/stars/BVLC/caffe?style=social)
-* :blue_book: **Docs**: https://caffe.berkeleyvision.org/tutorial/
-* **Docker**:
-    * [DockerHub](https://hub.docker.com/r/bvlc/caffe) ![docker pulls](https://img.shields.io/docker/pulls/bvlc/caffe.svg?style=social)
-    * [Nnidia NGC](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/caffe)
-    
-#### <img src="https://pjreddie.com/static/icon.png" width="32"/> Darknet
-
-> Darknet is an open source neural network framework written in C and CUDA. It is fast, easy to install, and supports CPU and GPU computation.
-
-* :house: **Main page**: https://pjreddie.com/darknet/
-* ![GitHub icon](https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg) **GitHub**:
-    * https://github.com/pjreddie/darknet ![GitHub stars](https://img.shields.io/github/stars/pjreddie/darknet?style=social)
-    * https://github.com/AlexeyAB/darknet ![GitHub stars](https://img.shields.io/github/stars/AlexeyAB/darknet?style=social)
-* :blue_book: **Docs**: https://pjreddie.com/darknet/install/
-* **Docker**:
-    * [DockerHub](https://hub.docker.com/r/daisukekobayashi/darknet) ![docker pulls](https://img.shields.io/docker/pulls/daisukekobayashi/darknet.svg?style=social)
-
-#### <img src="https://raw.githubusercontent.com/dmlc/web-data/master/mxnet/image/mxnet-icon.png" width="32"/> MXNet
-
-> A truly open source deep learning framework suited for flexible research prototyping and production.
-
-* :house: **Main page**: https://mxnet.apache.org/versions/1.9.0/
-* ![GitHub icon](https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg) **GitHub**: https://github.com/apache/incubator-mxnet ![GitHub stars](https://img.shields.io/github/stars/apache/incubator-mxnet?style=social)
-* <img src="https://pypi.org/static/images/logo-small.95de8436.svg" width=32 />**PyPI**:  https://pypi.org/project/mxnet [![PyPi version](https://badgen.net/pypi/v/mxnet/)](https://pypi.org/project/mxnet)
-* :blue_book: **Docs**: https://mxnet.apache.org/versions/1.9.0/api
-
-* **Docker**:
-    * [DockerHub](https://hub.docker.com/r/mxnet/python) ![docker pulls](https://img.shields.io/docker/pulls/mxnet/python.svg?style=social)
-    * [Nvidia NGC](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/mxnet)
-
-### High-level frameworks
+### Computer Vision frameworks
 
 | Framework                                                    | Creator   | <img src="https://pytorch.org/favicon.ico" width="32" /> | <img src="https://www.tensorflow.org/favicon.ico" width="32" /> | <img src="https://caffe.berkeleyvision.org/images/caffeine-icon.png" width="32"/> | <img src="https://raw.githubusercontent.com/dmlc/web-data/master/mxnet/image/mxnet-icon.png" width="32"/> |
 | ------------------------------------------------------------ | --------- | -------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [<img src="https://pytorch.org/favicon.ico" width="32" />Torchvision](#-Torchvision) | Facebook   | :heavy_check_mark:                                                        |                                                              |                                                              |                                                              |
-| [<img src="https://assets.website-files.com/5f76c986da6f6011315a6c45/5f7b485594e5335f56984a3c_Lightning_FavIcon.png" width="32">PyTorch Lightning](#-PyTorch-Lightning) | CILVR     | :heavy_check_mark:                                                        |                                                              |                                                              |                                                              |
+| [<img src="https://pytorch.org/favicon.ico" width="32" />Torchvision](#-Torchvision) | Facebook   | :heavy_check_mark:                                                        |                                                              |                                                              |                                                              |                                                              |                                                              |                                                              |
 | [<img src="https://keras.io/favicon.ico" width="32">Keras](#-Keras) | Google    |                                                          | :heavy_check_mark:                                                            |                                                              |                                                              |
 | [<img src="https://cv.gluon.ai/_static/assets/img/gluon_white.png" width="32"/>GluonCV](#-GluonCV) | DMLC      | :heavy_check_mark:                                                        |                                                              |                                                              | :heavy_check_mark:                                                            |
 | [<img src="https://mediapipe.dev/assets/img/favicon.svg" width="32">MediaPipe](#-MediaPipe) | Google    |                                                          |                                                              |                                                              |                                                              |
@@ -157,14 +74,6 @@
     - [Semantic segmentation](https://pytorch.org/vision/stable/models.html#semantic-segmentation)
 - :floppy_disk: **Datasets**: https://pytorch.org/vision/stable/datasets.html
 - :monkey: **Model zoo**: https://pytorch.org/vision/stable/models.html
-
-#### <img src="https://assets.website-files.com/5f76c986da6f6011315a6c45/5f7b485594e5335f56984a3c_Lightning_FavIcon.png" width="32"> PyTorch Lightning
-
-- :house: **Main page**: https://www.pytorchlightning.ai/
-- ![GitHub icon](https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg) **GitHub**: https://github.com/PyTorchLightning/pytorch-lightning ![GitHub stars](https://img.shields.io/github/stars/PyTorchLightning/pytorch-lightning?style=social)
-- <img src="https://pypi.org/static/images/logo-small.95de8436.svg" width=32 />**PyPI**:  https://pypi.org/project/pytorch-lightning [![PyPi version](https://badgen.net/pypi/v/pytorch-lightning/)](https://pypi.org/project/pytorch-lightning)
-- :blue_book: **Docs**: https://pytorch-lightning.readthedocs.io/en/stable/
-    - [Image classification](https://www.analyticsvidhya.com/blog/2021/06/image-recognition-using-pytorch-lightning/)
 
 #### <img src="https://keras.io/favicon.ico" width="32"> Keras
 
@@ -761,7 +670,7 @@ where
 | GIP        | [Image Completion and Extrapolation with Contextual Cycle Consistency](https://arxiv.org/abs/2006.02620) | Jun-2020    |
 | SRNet      | [Editing Text in the Wild](https://arxiv.org/abs/1908.03047v1)                                           | Aug-2019    |
 | DeepFillV2 | [https://arxiv.org/abs/1806.03589](https://arxiv.org/abs/1806.03589)                                     | Jun-2018    |
-| DeepFillV1 | [Generative Image Inpainting with Contextual Attention](https://arxiv.org/abs/1801.07892)                | Jan-2018    | 
+| DeepFillV1 | [Generative Image Inpainting with Contextual Attention](https://arxiv.org/abs/1801.07892)                | Jan-2018    |
 
 ### Pretrained Models
 
@@ -1002,7 +911,7 @@ where
 | [LabelImg](https://github.com/tzutalin/labelImg)           | Qt  | VOC    |        |                | :heavy_check_mark: |           |              |                   |
 | [CVAT](https://github.com/openvinotoolkit/cvat)            | Web | All    | :heavy_check_mark: |                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [COCOAnnotator](https://github.com/jsbroks/coco-annotator) | Web | COCO   |        |                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| [Makesense.ai](https://www.makesense.ai/)                  | Web | COCO   | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                   | 
+| [Makesense.ai](https://www.makesense.ai/)                  | Web | COCO   | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                   |
 
 ## Material
 
@@ -1011,12 +920,6 @@ where
 * [Deep Learning book](https://www.deeplearningbook.org/)
 * [Computer Vision:  Models, Learning, and Inference](http://www.computervisionmodels.com/)
 * [Computer Vision with Python](https://www.oreilly.com/library/view/programming-computer-vision/9781449341916/)
-
-### :page_facing_up: Papers
-
-* [Arxiv](https://arxiv.org/)
-* [PapersWithCode](https://paperswithcode.com/)
-* [Research Gate](https://www.researchgate.net/)
 
 ### :orange_book: Blogs
 
