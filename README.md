@@ -2,7 +2,7 @@
 
 A Wiki for artificial intelligence
 
-- [Deep Learning Basics](DLWiki.md)
+- [Deep Learning](DLWiki.md)
 - **Computer Vision**
-    * [Image processing reference](ImageProcessing.md)
-    * [Computer Vision Wiki](CViki.md)
+    * [Image processing](ImageProcessing.md)
+    * [Computer Vision for Images](CViki4Images.md)

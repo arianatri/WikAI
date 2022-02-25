@@ -1,4 +1,4 @@
-<h1><center> Computer Vision Reference </center></h1>
+<h1><center> Computer Vision for Images </center></h1>
 <hr/>
 
 ## Table of Contents
